@@ -3,7 +3,7 @@ for [Mobile_HRI_Design](https://github.com/FAR-Lab/Mobile_HRI_Design)
 
 Please place links here to the README.md's for each of your labs here:
 
-Lab 0. Mobile Robot Bootcamp
+[Lab 0. Mobile Robot Bootcamp](Lab0/Readme.md)
 
 Lab 1. Interaction First
 
