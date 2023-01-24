@@ -10,7 +10,7 @@ Foxglove studio is a visualization tool for ROS 2. It is relatively new but very
 
 
 ## Install ROS2 Humble on your machine. (Only recommended for Linux and Windows Users.)
-In the past, ROS is very exclusive. Your kind of have to use a linux based system to use it. As an upgrade, ROS 2 now supports more [platforms](https://www.ros.org/reps/rep-2000.html#rolling-ridley-june-2020-ongoing), but the community still prefers linux over other platforms. Try your best to install 
+In the past, ROS has been very exclusive. Your kind of have to use a linux based system to use it. As an upgrade, ROS 2 now supports more [platforms](https://www.ros.org/reps/rep-2000.html#rolling-ridley-june-2020-ongoing), but the community still prefers linux over other platforms. Try your best to install 
 ROS on your laptop, but this is definitely not a requirement to complete the course. Even if you have trouble installing it, please still bring your laptop to
 the lab on Thursday. 
 
