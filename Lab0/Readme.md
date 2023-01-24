@@ -13,7 +13,7 @@ ROS on your laptop, but this is definitely not a requirement to complete the cou
 the lab on Thursday. 
 
 #### Linux
-If you have a linux system, great! Please follow the instructions [here](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debians.html) to install ROS 2 Humble. If possible, you should do desktop install ```sudo apt install ros-humble-desktop```. Development tools are not required. 
+If you have a linux system, great! Please follow the instructions [here](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debians.html) to install ROS 2 Humble. If possible, you should do desktop install ```ros-humble-desktop```. Development tools are not required. 
 
 #### Windows
 Method 1 (recommended): Windows setup is a bit harder than Linux machines. Please follow the instructions [here](https://docs.ros.org/en/humble/Installation/Windows-Install-Binary.html) to install ROS 2 Humble. 
