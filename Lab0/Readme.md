@@ -20,6 +20,9 @@ the lab on Thursday.
 #### Linux
 If you have a linux system, great! Please follow the instructions [here](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debians.html) to install ROS 2 Humble. If possible, you should do desktop install ```ros-humble-desktop```. Development tools are not required. 
 
+#### SBC (if you happen to have a spare raspberry pi 3/4), bring those!
+Install Ubuntu 22.04 system [Here](https://ubuntu.com/download/raspberry-pi). Then follow the instructions [here](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debians.html).
+
 #### Windows
 Method 1 (recommended): Windows setup is a bit harder than Linux machines. Please follow the instructions [here](https://docs.ros.org/en/humble/Installation/Windows-Install-Binary.html) to install ROS 2 Humble. 
 
