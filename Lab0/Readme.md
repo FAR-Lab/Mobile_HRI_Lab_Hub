@@ -8,6 +8,9 @@ In lab on Thursday, we will walk you through the basic concepts for ROS and play
 Foxglove studio is a visualization tool for ROS 2. It is relatively new but very powerful. Please download it on you laptop [here](https://foxglove.dev/studio).
 * For windows users, if you get a Windows Security Alert upon opening the app regarding network permissions, make sure you select **both private (not selected by default) and public network**.
 
+## Install VNC Viewer
+Download VNC Viewer from [here](https://www.realvnc.com/en/connect/download/viewer/).
+
 
 ## Install ROS2 Humble on your machine. (Only recommended for Linux and Windows Users.)
 In the past, ROS has been very exclusive. Your kind of have to use a linux based system to use it. As an upgrade, ROS 2 now supports more [platforms](https://www.ros.org/reps/rep-2000.html#rolling-ridley-june-2020-ongoing), but the community still prefers linux over other platforms. Try your best to install 
