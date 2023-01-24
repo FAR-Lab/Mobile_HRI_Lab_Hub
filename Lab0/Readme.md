@@ -29,7 +29,7 @@ Otherwise, we will provide raspberry pi as alternatives during the lab.
 Medthod 2: If you are a pro on docker, [here](https://hub.docker.com/r/osrf/ros2/) is a docker image for you. This is not recommended because you are not able to 
 connect to your remote robot from docker. This is only good for compiling and testing code.
 
-#### If you have trouble installing ROS, please make sure your ssh is running properly. 
+#### If you have trouble installing ROS, please make sure your ssh is running properly before coming to the lab on Thursday. 
 For Windows, please follow the guide [here](https://learn.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse?tabs=gui).
 Mac and Linux machines should have ssh setup by default.
 
