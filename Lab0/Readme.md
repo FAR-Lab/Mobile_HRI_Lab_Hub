@@ -24,8 +24,8 @@ Method 2: As an alternative, you can leverage the power of [Windows Subsystem fo
 * This is not recommended because you may run into firewall issures. Also, you cannot connect to remote robots through your laptop later. However, this is a great way to do robot simulations.
 
 #### Mac (not recommended)
-Method 1: macOS is no longer a target platform for future ROS realeases, this means you need to compile from source.
-If you have macOS Mojave (10.14) and have some free time, give [this](https://docs.ros.org/en/humble/Installation/Alternatives/macOS-Development-Setup.html) a try.
+Method 1: macOS is no longer a target platform for future ROS realeases, this means you need to compile it from source.
+If you have macOS Mojave (10.14) and some free time, give [this](https://docs.ros.org/en/humble/Installation/Alternatives/macOS-Development-Setup.html) a try.
 Otherwise, we will provide raspberry pi as alternatives during the lab.
 
 Medthod 2: If you are a pro on docker, [here](https://hub.docker.com/r/osrf/ros2/) is a docker image for you. This is not recommended because you are not able to 
@@ -33,7 +33,7 @@ connect to your remote robots from docker. This is only good for compiling and t
 
 #### If you have trouble installing ROS, please make sure your ssh is running properly before coming to the lab on Thursday. 
 For Windows, please follow the guide [here](https://learn.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse?tabs=gui).
-Mac and Linux machines should have ssh setup by default.
+Mac and Linux machines should have ssh by default.
 
 ## Set up your Course Github Repo
 
