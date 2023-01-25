@@ -6,7 +6,8 @@ In lab on Thursday, we will walk you through the basic concepts for ROS and play
 
 ## Install VSCode
 Install VSCode [here](https://code.visualstudio.com/).
-Install Remote-SSH extension.
+
+Then, install Remote-SSH extension within VSCode.
 ![image](https://user-images.githubusercontent.com/20778137/214525990-cc42652c-1581-4bd8-8440-5df997f84095.png)
 
 
