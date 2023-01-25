@@ -4,6 +4,12 @@ For the first lab, we will just focus on getting everyone set up with [ROS 2](ht
 
 In lab on Thursday, we will walk you through the basic concepts for ROS and play with some basic functionalities of it.
 
+## Install VSCode
+Install VSCode [here](https://code.visualstudio.com/).
+Install Remote-SSH extension.
+![image](https://user-images.githubusercontent.com/20778137/214525990-cc42652c-1581-4bd8-8440-5df997f84095.png)
+
+
 ## Install Foxglove studio.
 Foxglove studio is a visualization tool for ROS 2. It is relatively new but very powerful. Please download it on you laptop [here](https://foxglove.dev/studio).
 * For windows users, if you get a Windows Security Alert upon opening the app regarding network permissions, make sure you select **both private (not selected by default) and public network**.
