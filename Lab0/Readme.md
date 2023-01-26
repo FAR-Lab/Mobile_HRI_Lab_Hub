@@ -29,7 +29,7 @@ Download VNC Viewer from [here](https://www.realvnc.com/en/connect/download/view
 
 ### Install ROS2 Humble on your machine. (Only recommended for Linux and Windows Users.)
 In the past, ROS has been very exclusive. Your kind of have to use a linux based system to use it. As an upgrade, ROS 2 now supports more [platforms](https://www.ros.org/reps/rep-2000.html#rolling-ridley-june-2020-ongoing), but the community still prefers linux over other platforms. Try your best to install 
-ROS on your laptop, but this is definitely **not** a requirement to complete the course. Even if you have trouble installing it, please still bring your laptop to
+ROS on your laptop, but this is definitely *not* a requirement to complete the course. Even if you have trouble installing it, please still bring your laptop to
 the lab on Thursday. 
 
 #### Linux
@@ -257,7 +257,7 @@ import rclpy
 from rclpy.node import Node
 from std_msgs.msg import String
 ```
-Recall that when we create the pacakge in **Task 3**, we add dependencies to `rclpy` and `std_msgs`. We are using them now! `rclpy ` contains basic functionalities of ROS, and we specifically need the `Node` class from `rclpy`, which provides basic functions of nodes in ROS.
+Recall that when we create the package in *Task 3*, we add dependencies to `rclpy` and `std_msgs`. We are using them now! `rclpy ` contains basic functionalities of ROS, and we specifically need the `Node` class from `rclpy`, which provides basic functions of nodes in ROS.
  `std_msgs` is a package that contains many different types of messages. Click [here](http://wiki.ros.org/std_msgs) to see a list of included message types. 
 
 Now, copy the following class to the hri_publisher.py.
@@ -336,7 +336,7 @@ This is ROS's equivalent of `print()` in python, but a bit fancier. It will prin
 ```
 Well, we all know what this means. Just increment this variable `i` by 1.
 
-**So, this timer callback function is just publishing one message. But because this function is called every 1 second, we are publishing a message every second!**
+*So, this timer callback function is just publishing one message. But because this function is called every 1 second, we are publishing a message every second!*
 
 
 Now, we define a main function to handle a few ROS related things and use our freshly defined hri_publisher class. This is very much a template that you can just 
@@ -404,7 +404,7 @@ You should see something like the following.
 
 Note that this is not what is delivered to the topic. This is just what we printed to the terminal with `get_logger()`. 
 
-ROS provides you with a set of command line tools that help you inspect the nodes and topics. Let's try them! **Leave the previous terminal running, and open a new terminal.**
+ROS provides you with a set of command line tools that help you inspect the nodes and topics. Let's try them! *Leave the previous terminal running, and open a new terminal.*
 
 ```
 ros2 node list
@@ -433,15 +433,5 @@ This will prints out what is actually being published by our node!
 
 1. Link to the folder of a ROS package that contains a publisher and a subscriber 
 2. List 5 questions you have about ROS following the tutorial, answers you have found and things you still don't get
-
-a.
-
-b.
-
-c.
-
-d.
-
-e.
 3. Feedback on the bootcamp: What was easy and what was difficult to understand?
 
