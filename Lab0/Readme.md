@@ -77,10 +77,10 @@ You will need:
 
 ***
 ### Deliverables for this lab are:
-_(Due next Tuesday)_ 
-1. The folder of a ROS package that contains a publisher and a subscriber (that communicates with each other - you will learn this today.)
-2. List 5 applications that you think requires a pair of publisher and subscriber.
-3. Tell us about your experience learning ROS. What is easy and what is difficult to understand?
+_(Due next Tuesday)_ Place these in the [deliverables section at the bottom of this page](#deliverables) so that it is easy for the grader to find.
+1. The folder of a ROS package that contains a publisher and a subscriber
+2. List 5 questions you have about ROS following the tutorial, answers you have and things you still don't get
+3. Feedback on the bootcamp: What was easy and what was difficult to understand?
 
 ***
 The lab today is based on the tutorials on the official [ROS 2 website](https://docs.ros.org/en/humble/index.html). ROS tutorials are generally good, and the community is very friendly. However, when I first started learning ROS, I found the tutorials a bit hard to understand. Therefore, I added some of my own sauce to the tutorial and hopefully this will help you understand it a bit better. Please ask freely if you run into any questions, you should never be alone facing ROS problems. 
@@ -428,3 +428,10 @@ ros2 topic echo /hri_topic
 This will prints out what is actually being published by our node!
 
 * Note that our node is alone in the network now! It is talking but no one is listening. That's right, nodes don't need a listener in order to speak. 
+## Deliverables
+
+
+1. The folder of a ROS package that contains a publisher and a subscriber
+2. List 5 questions you have about ROS following the tutorial, answers you have and things you still don't get
+3. Feedback on the bootcamp: What was easy and what was difficult to understand?
+
