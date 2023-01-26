@@ -211,7 +211,8 @@ Topics:  In our people network example, this can be thought of as the topic of t
 
 This graph captures the essense of the ROS concept.
 
-[TODO]
+![image](https://user-images.githubusercontent.com/20778137/214837850-beedc2ec-c26a-42fb-a3f0-0d952e9e342a.png)
+Picture source: https://docs.ros.org/en/humble/Tutorials/Beginner-CLI-Tools/Understanding-ROS2-Topics/Understanding-ROS2-Topics.html
 
 **Task 4**
 To speak, a node needs a special type of function called `publisher`.
