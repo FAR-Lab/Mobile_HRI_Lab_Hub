@@ -229,9 +229,15 @@ This graph captures the essense of the ROS concept.
 Picture source: https://docs.ros.org/en/humble/Tutorials/Beginner-CLI-Tools/Understanding-ROS2-Topics/Understanding-ROS2-Topics.html
 
 #### Task 4 Make a node that talks!
-To speak, a node needs a special type of function called `publisher`..
+To speak, a node needs a special type of function called a `publisher`.
 
-In your workspace, create a file and name it `hri_publisher.py` in the following folder (mobilehri_ws/src/my_package/my_package/). You can create files using the code editor, which is similar to the VSCode interface. Your file structure should look like this now.
+In your workspace, create a file and name it `hri_publisher.py` in the following folder (mobilehri_ws/src/my_package/my_package/).
+```
+# In a terminal
+cd ~/mobilehri_ws/src/my_package/my_package/
+touch hri_publisher.py                        # This creates an empty file called hri_publisher.
+```
+ You can create files using the code editor, which is similar to the VSCode interface. Your file structure should look like this now.
 ```
 mobilehri_ws/
     src/
@@ -257,11 +263,11 @@ import rclpy
 from rclpy.node import Node
 from std_msgs.msg import String
 ```
-Recall that when we create the package in *Task 3*, we add dependencies to `rclpy` and `std_msgs`. We are using them now! `rclpy ` contains basic functionalities of ROS, and we specifically need the `Node` class from `rclpy`, which provides basic functions of nodes in ROS.
+Recall that when we create the pacakge in **Task 3**, we add dependencies to `rclpy` and `std_msgs`. We are using them now! `rclpy ` contains basic functionalities of ROS, and we specifically need the `Node` class from `rclpy`, which provides basic functions of nodes in ROS.
  `std_msgs` is a package that contains many different types of messages. Click [here](http://wiki.ros.org/std_msgs) to see a list of included message types. 
 
 Now, copy the following class to the hri_publisher.py.
-```
+``` Python
 class HRIPublisher(Node):
 
     def __init__(self):
@@ -277,39 +283,37 @@ class HRIPublisher(Node):
         self.publisher_.publish(msg)
         self.get_logger().info('Chatting with the robot: "%s"' % msg.data)
         self.i += 1
-```
+``` 
 Let's decode this line by line. 
-```
+``` Python
 # First, Let's create a node called `HRIPublisher`
 class HRIPublisher(Node):
 ```
 ROS 2 has a general template for how Node should operate. To create your own customized node, you need to make your class **inherit** the general Node class you just imported. If you are unfamiliar with the concept of inheritance, do a quick search [online](https://www.w3schools.com/python/python_inheritance.asp#:~:text=Inheritance%20allows%20us%20to%20define,class%2C%20also%20called%20derived%20class.)!
-
-```
+ 
+``` Python
     # This function will be called whenever our Node is being created.
-```
-```
     def __init__(self):
         super().__init__('hri_publisher')
 ```
 super() means this child class inherit all the methods and properties from its parent.Here, we ask our own HRIPublisher node to have all the basic functionalities of the `rclpy.Node` class, and give it a name called `hri_publisher`.
-```
+``` Python
         self.publisher_ = self.create_publisher(String, 'hri_topic', 10)
 ```
 Most important line of code! we are creating a publisher function using [self.create_publisher()](https://docs.ros2.org/latest/api/rclpy/api/node.html#rclpy.node.Node.create_publisher) function. 
 It is saying that our `HRIPublisher` node is going to publish messages of the type `String`, under the topic name `hri_topic`. The number 10 is specifing something called a qos_profile (quality of service), which specifies the rules on how messages should be handled. Read more about it [here](https://docs.ros.org/en/humble/Concepts/About-Quality-of-Service-Settings.html). We will talk more about this later.
-```
+``` Python
         timer_period = 1.0  # seconds
         self.timer = self.create_timer(timer_period, self.timer_callback)
 ```
 ROS 2 node also provides you with a [timer](https://docs.ros2.org/latest/api/rclpy/api/node.html#rclpy.node.Node.create_publisher). What this means is that after every `time_period` (1 second here), the node will automatically call the function `self.timer_callback`. Let's look inside `timer_callback()`.
 
-```
+``` Python
     def timer_callback(self):
         msg = String()
 ```
 Create a message with the type String.
-```
+``` Python
         msg.data = 'Hey robot, how are you doing? (%d)' % self.i
 ```
 Fill in the message with some content. Note that your message content must match the message type. How to check? Look at the definition of String() class in ROS [here](http://docs.ros.org/en/api/std_msgs/html/msg/String.html). String message type in ROS contains a field called `data`, that is of type `string`. What? This is confusing. Let's look at another example. 
@@ -322,28 +326,28 @@ pointMsg.y = 0.0
 pointMsg.z = 0.0
 ```
 
-```
+``` Python
         self.publisher_.publish(msg)
 ```
 We are using our defined `publisher_` function to publish the msg! Our node will start talking!
 
-```
+``` Python
         self.get_logger().info('Chatting with the robot: "%s"' % msg.data)
 ```
 This is ROS's equivalent of `print()` in python, but a bit fancier. It will print extra information such as publishing time of the message. 
-```
+``` Python
         self.i += 1
 ```
 Well, we all know what this means. Just increment this variable `i` by 1.
 
-*So, this timer callback function is just publishing one message. But because this function is called every 1 second, we are publishing a message every second!*
+**So, this timer callback function is just publishing one message. But because this function is called every 1 second, we are publishing a message every second!**
 
 
 Now, we define a main function to handle a few ROS related things and use our freshly defined hri_publisher class. This is very much a template that you can just 
 reuse in the future.
 
 Copy the following chunk of code to `hri_publisher.py`, following the class definition of HRIPublisher.
-```
+``` Python
 def main(args=None):
     rclpy.init(args=args)
 
@@ -359,29 +363,72 @@ if __name__ == '__main__':
     main()
 ```
 
+<details close>
+<summary>What your code should look like now.</summary>
+<br>
+
+``` Python
+import rclpy
+from rclpy.node import Node
+
+from std_msgs.msg import String
+
+class HRIPublisher(Node):
+
+    def __init__(self):
+        super().__init__('hri_publisher')
+        self.publisher_ = self.create_publisher(String, 'hri_topic', 10)
+        timer_period = 1  # seconds
+        self.timer = self.create_timer(timer_period, self.timer_callback)
+        self.i = 0
+
+    def timer_callback(self):
+        msg = String()
+        msg.data = 'Hey robot, how are you doing? (%d)' % self.i
+        self.publisher_.publish(msg)
+        self.get_logger().info('Chatting with the robot: "%s"' % msg.data)
+        self.i += 1
+
+def main(args=None):
+    rclpy.init(args=args)
+
+    hri_publisher = HRIPublisher()
+
+    rclpy.spin(hri_publisher)
+
+    hri_publisher.destroy_node()
+    rclpy.shutdown()
+
+
+if __name__ == '__main__':
+    main()
 
 ```
+</details>
+
+Let's take a close look at this as well. 
+``` Python
 def main(args=None):
     rclpy.init(args=args)
 ```
 Initialize the `rclpy` library.
-```
+``` Python Python
     hri_publisher = HRIPublisher()
 ```
 Use our freshly defined class to create a node
-```
+``` Python
     rclpy.spin(hri_publisher)
 ```
 The `spin()` function [spins](https://docs.ros2.org/latest/api/rclpy/api/init_shutdown.html#rclpy.spin) the node. *After a node is created, items of work can be done (e.g. subscription callbacks) by spinning on the node.* 
 
 This is mostly relevant to our callback function. Remember we have a timer callback function? This will make sure it will be called properly. 
-```
+``` Python
     hri_publisher.destroy_node()
     rclpy.shutdown()
 ```
 Handle shutdown gracefully.
 
-```
+``` Python
 if __name__ == '__main__':
     main()
 ```
@@ -389,7 +436,7 @@ We just defined a few functions and classes, but none of them are called yet. He
 
 #### Task 4.2
 Give it a try!
-```
+``` Python
 cd ~/mobilehri_ws/src/my_package/my_package/
 python3 hri_publisher.py
 ```
@@ -404,7 +451,7 @@ You should see something like the following.
 
 Note that this is not what is delivered to the topic. This is just what we printed to the terminal with `get_logger()`. 
 
-ROS provides you with a set of command line tools that help you inspect the nodes and topics. Let's try them! *Leave the previous terminal running, and open a new terminal.*
+ROS provides you with a set of command line tools that help you inspect the nodes and topics. Let's try them! **Leave the previous terminal running, and open a new terminal.**
 
 ```
 ros2 node list
@@ -428,10 +475,96 @@ ros2 topic echo /hri_topic
 This will prints out what is actually being published by our node!
 
 * Note that our node is alone in the network now! It is talking but no one is listening. That's right, nodes don't need a listener in order to speak. 
+
+To close the program, click the terminal that is running, and press `"Ctrl + C"` (Might be `Cmd + C` on Mac, you guys let me know).
+
+#### Task 5 Make a node that listens!
+
+Okay, now we have a talkative node that is constantly greeting a robot, but it is alone in the next work. Let's make it a friend that listens to it.
+
+In your workspace, create a file and name it `hri_subscriber.py` in the following folder (mobilehri_ws/src/my_package/my_package/). 
+```
+# In a terminal
+cd ~/mobilehri_ws/src/my_package/my_package/
+touch hri_subscriber.py 
+```
+
+You can also create files using the code editor, which is similar to the VSCode interface. Your file structure should look like this now.
+```
+mobilehri_ws/
+    src/
+        my_package/
+            my_package/           # Where your actual python code will live
+                __init__.py
+                hri_publisher.py     
+                hri_subscriber.py # New!
+            package.xml           # Package info, can add more dependencies
+            resource/             # autogenerated by python
+            setup.cfg             # autogenerated to create executables
+            setup.py              # can add entry_points (terminal shortcuts)
+            test/
+```
+
+Copy paste the following code to `hri_subscriber.py`. Save your file.
+
+``` Python
+import rclpy
+from rclpy.node import Node
+from std_msgs.msg import String
+
+
+class HRISubscriber(Node):
+
+    def __init__(self):
+        super().__init__('hri_subscriber')
+        self.subscription = self.create_subscription(String, 'hri_topic', self.listener_callback, 10)
+
+    def listener_callback(self, msg):
+        self.get_logger().info('I heard: "%s"' % msg.data)
+        self.get_logger().info("I am not doing so well. I failed my Turing test. ")
+
+
+def main(args=None):
+    rclpy.init(args=args)
+    hri_subscriber = HRISubscriber()
+    rclpy.spin(hri_subscriber)
+    hri_subscriber.destroy_node()
+    rclpy.shutdown()
+
+
+if __name__ == '__main__':
+    main()
+```
+As you can see, the structure is the same (Because it is also just a node). 
+``` python
+        self.subscription = self.create_subscription(String, 'hri_topic', self.listener_callback, 10)
+```
+This time, we are creating a [subscriber](https://docs.ros2.org/latest/api/rclpy/api/node.html#rclpy.node.Node.create_subscription). 
+`create_subscription(msg_type, topic, callback, qos_profile)`
+The first parameter is message type. This parameter must match with the message type of the topic, otherwise they are not speaking the same language! 
+The second parameter is the topic name. This is the topic you want to listen to. 
+Like the timer we encountered in the publisher section, subscribers also have callback functions (here, it is named `self.listener_callback`).  What's different is that the timer callback will be called with predefined frequency, and subscriber callbacks will be called every time it receives a new message from subscribed topic.
+
+Let's try it!
+
+If you shutdown the publisher, restart it.
+```
+# In terminal 1
+cd ~/mobilehri_ws/src/my_package/my_package/
+python3 hri_publisher.py
+```
+
+```
+# In terminal 2
+cd ~/mobilehri_ws/src/my_package/my_package/
+python3 hri_subscriber.py
+```
+
+In terminal 2, you should see that whenever a message is published in terminal 1, the subscriber will respond to it!
+
 ## Deliverables
 
 
 1. Link to the folder of a ROS package that contains a publisher and a subscriber 
 2. List 5 questions you have about ROS following the tutorial, answers you have found and things you still don't get
 3. Feedback on the bootcamp: What was easy and what was difficult to understand?
-
