@@ -58,16 +58,14 @@ For Windows, please follow the guide [here](https://learn.microsoft.com/en-us/wi
 Mac and Linux machines should have ssh by default.
 
 ## ROS BOOTCAMP (In-lab activity, 1/26/2023)
-***
-Robot Operating System (ROS) has been the standard open source tool for the robotics comminity since 2007. Before ROS, each research lab had their own code base and infrastructure, which made sharing and collaboration very difficult to manage. ROS provides a unified space for the robotics community to contribute and share.
+
+Robot Operating System (ROS) has been the standard open source tool for the robotics community since 2007. Before ROS, research labs tended to each have their own code base and infrastructure, which made sharing and collaboration very difficult to manage. ROS provides a unified space for the robotics community to contribute and share.
 
 <img src="https://user-images.githubusercontent.com/20778137/214838967-7bd21667-1181-4a7a-8af6-c17b6d0ef483.png" width="600">
 Picture credit: http://geldonsgaming.blogspot.com/2012/08/regarding-reinventing-wheel.html
 
 There are many distributions of ROS (for different operating systems, like Linux, Windows, and MacOS and new updates, like ROS 1 or ROS 2). Since ROS is initially (and still) mostly based on Linux systems, the release of ROS versions closely matches the release of Ubuntu operating systems. If you have worked with ROS before, you may probably know that there are 2 main versions of ROS: ROS 1 and ROS 2. In this class, we will use ROS 2 (called distribution Humble), which is the latest distribution of ROS 2. The documentation contains a lot of helpful information and tutorials, please take a moment and skim through the available resources listed on this [website](https://docs.ros.org/en/humble/index.html).
 
-
-***
 ### Prep
 Since most students are using Mac, which does not support ROS natively, we decide to switch to a web-based development environment just for this lab to get you started on ROS 2 without dealing with the setup process (Thanks, Frank! -natalie).
 
