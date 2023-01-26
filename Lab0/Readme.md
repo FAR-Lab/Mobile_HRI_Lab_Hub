@@ -59,14 +59,14 @@ Mac and Linux machines should have ssh by default.
 Robot Operating System (ROS) has been the standard open source tool for the robotics comminity since 2007. Before ROS, each research lab had their own code base and infrastructure, which made sharing and collaboration very difficult to manage. ROS provides a unified space for the robotics community to contribute and share.
 
 <img src="https://user-images.githubusercontent.com/20778137/214838967-7bd21667-1181-4a7a-8af6-c17b6d0ef483.png" width="600">
-Picture src: http://geldonsgaming.blogspot.com/2012/08/regarding-reinventing-wheel.html
+Picture credit: http://geldonsgaming.blogspot.com/2012/08/regarding-reinventing-wheel.html
 
-There are many distributions of ROS. Since ROS is initially (and still) mostly based on Linux systems, the release of ROS versions is somewhat matching the release of Ubuntu systems. If you worked with ROS before, you may probably know that there are 2 main versions of ROS, namely ROS 1 and ROS 2. In this class, we will use ROS 2 (distribution Humble), which is the latest distribution of ROS 2. The documentation contains a lot of helpful information and tutorial, please take a moment and skim through the available resources listed on this [website](https://docs.ros.org/en/humble/index.html).
+There are many distributions of ROS (for different operating systems, like Linux, Windows, and MacOS and new updates, like ROS 1 or ROS 2). Since ROS is initially (and still) mostly based on Linux systems, the release of ROS versions closely matches the release of Ubuntu operating systems. If you have worked with ROS before, you may probably know that there are 2 main versions of ROS: ROS 1 and ROS 2. In this class, we will use ROS 2 (called distribution Humble), which is the latest distribution of ROS 2. The documentation contains a lot of helpful information and tutorials, please take a moment and skim through the available resources listed on this [website](https://docs.ros.org/en/humble/index.html).
 
 
 ***
 ### Prep
-Since most students are using Mac, which does not support ROS natively, we decide to switch to a web-based development environment just for this lab to get you started on ROS 2 without dealing with the setup process. 
+Since most students are using Mac, which does not support ROS natively, we decide to switch to a web-based development environment just for this lab to get you started on ROS 2 without dealing with the setup process (Thanks, Frank! -natalie).
 
 You will need:
 1. Go the [the Construct website](https://www.theconstructsim.com/) and create a free account.
@@ -75,35 +75,35 @@ You will need:
 4.  Name the project "lab0" and create the project.
 
 ### (Due next Tuesday) Deliverables for this lab are:
-1. A ROS package that contains a publisher and a subscriber that communicates with each other. (You will learn this today.)
+1. The folder of a ROS package that contains a publisher and a subscriber (that communicates with each other - you will learn this today.)
 2. List 5 applications that you think requires a pair of publisher and subscriber.
-3. Tell us what your experience starting to learn ROS. What is easy to understand and what is difficult to comprehend.
+3. Tell us about your experience learning ROS. What is easy and what is difficult to understand?
 
 ***
-The lab today is based on the tutorials on the official [ROS 2 website](https://docs.ros.org/en/humble/index.html). ROS tutorials are generally good, and the community is very friendly. However, when I first started learning ROS, I found the tutorials a big hard to understand. Therefore, I added some of my own sauce to the tutorial and hopefully this will help you understand it a bit better. Please ask freely if you run into any question, you should never be alone facing ROS problems.
+The lab today is based on the tutorials on the official [ROS 2 website](https://docs.ros.org/en/humble/index.html). ROS tutorials are generally good, and the community is very friendly. However, when I first started learning ROS, I found the tutorials a bit hard to understand. Therefore, I added some of my own sauce to the tutorial and hopefully this will help you understand it a bit better. Please ask freely if you run into any questions, you should never be alone facing ROS problems. 
 
 ### Source the environment
-You will hear me say this a lot. This is very important. Without sourcing your environment, your system doesn't know what ROS is.
+Source the environment. You will hear me say this a lot. This is very important. Without sourcing your environment, your system doesn't know what ROS is.
 
-So, what do I mean by source? Officially, it means adding environment variables to the system path that are crucial for the system to identify and execute ROS functions (Got my answer from this [forum](https://answers.ros.org/question/188309/what-does-source-command-actually-do/)). It simply means tell your system what ROS is and where it is. So, if your computer is asking you what ROS is, you probably forgot to source it.
+So, what do I mean by "source the environment"? Officially, it means adding environment variables to the system path that are crucial for the system to identify and execute ROS functions (Got my answer from this [forum](https://answers.ros.org/question/188309/what-does-source-command-actually-do/)). It simply means tell your system what ROS is and where it is. So, if your computer is asking you what ROS is, you probably forgot to source it.
 
 #### Task 1:
 
-To source ROS, open a terminal in your opened lab0 Rosject (click the terminal button in the bottom left corner), type in the following command:
+To source ROS, open a terminal, aka, "Webshell" (on the bottom left corner) in your opened lab0 Rosject (click the terminal button in the bottom left corner), type in the following command:
 
 ```source /opt/ros/humble/setup.bash``` 
 
-or if you are lazy, this works too.
+or if you are lazy, this works too:
 
 ```. /opt/ros/humble/setup.bash```
 
 * By default, ROS will be installed in `/opt/ros/[Distro]/`.
 
-Whenever you open a new terminal that you want to run ROS in, you have to source it. I know it is annoying but this is the reality. To make your life easier, you can add this command to `~/.bashrc`. It is a hidden file that will be executed automatically every time you open a new terminal. 
+Whenever you open a new terminal that you want to run ROS in, you have to source it. I know that would be annoying. I have a solution: To make your life easier, you can add this command to `. ~/.bashrc`. It is a hidden file that will be executed automatically every time you open a new terminal. You're welcome. :)
 
 #### Task 1.5:
 
-Open the code editor (the button next to terminal) in your lab0 Rosject, click "File" -> "Open...", and find the file named ".bashrc". Open it, and add ```source /opt/ros/humble/setup.bash```  to the end. Save it.
+Open the code editor (the button right of terminal that looks like this: < >) in your lab0 Rosject, click "File" -> "Open...", and find the file named ".bashrc" (it will have a purple icon). Open it, and add ```source /opt/ros/humble/setup.bash```  to the end. Save it.
 
 ### Part A. ROS Workspace. 
 According to the [documentation](https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Creating-A-Workspace/Creating-A-Workspace.html), "a workspace is a directory containing ROS 2 packages."
