@@ -54,4 +54,339 @@ connect to your remote robots from docker. This is only good for compiling and t
 For Windows, please follow the guide [here](https://learn.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse?tabs=gui).
 Mac and Linux machines should have ssh by default.
 
+## ROS BOOTCAMP (In-lab activity, 1/26/2023)
+***
+Robot Operating System (ROS) has been the standard open source tool for the robotics comminity since 2007. Before ROS, each research lab had their own code base and infrastructure, which makes sharing and collaboration very difficult to manage. ROS provides a unified space for the robotics community to contribute and share.
 
+There are many distributions of ROS. Since ROS is initially (and still) mostly based on Linux systems, the release of ROS versions is largely affected by the release of Ubuntu systems. If you worked with ROS before, you may probably know that there are 2 main versions of ROS, namely ROS 1 and ROS 2. In this class, we will use ROS 2 (distribution Humble), which is the latest distribution of ROS 2. The documentation contains a lot of helpful information and tutorial, please take a moment and skim through the available resources listed on this [website](https://docs.ros.org/en/humble/index.html).
+
+
+***
+### Prep
+Since most students are using Mac, which does not support ROS natively, we decided to switch to a web-based development environment just for this lab to get you started on ROS 2 without dealing with the setup process. 
+
+You will need:
+1. Go the [the Construct website](https://www.theconstructsim.com/) and create a free account.
+2. On your home page, look to the panel on the left, click "My Rosjects"
+3. Click "Create a New Rosject", in the ROS Distro drop down, select `ROS2 Humble`.
+4.  Name the project "lab0" and create the project.
+
+Deliverables for this lab are:
+1. A ROS package that contains a publisher and a subscriber that communicates with each other. (You will learn this today.)
+2. List 5 applications that you think requires a pair of publisher and subscriber.
+3. Tell us what your experience starting to learn ROS. What is easy to understand and what is difficult to comprehend.
+
+***
+The lab today is based on the tutorials on the official ROS guide. ROS tutorials are generally good, and the community is in general very friendly. However, when I first started learning ROS two years ago, I find the tutorials a big hard to understand. Therefore, I added some of my own sauce to the tutorial and hopefully this will help you understand it a bit better. Please ask freely if you run into any question, you should never be alone facing ROS problems.
+
+### Source the environment
+You will hear me say this a lot. This is very important. Without sourcing your environment, your system doesn't know what ROS is.
+
+So, what do I mean by source? Officially, it means adding environment variables to the system path that are crucial for the system to identify and execute ROS functions (Got my answer from this [forum](https://answers.ros.org/question/188309/what-does-source-command-actually-do/)). It simply means tell your system what ROS is and where it is. So, if your computer is asking you what ROS is, you probably forgot to source it.
+
+**Task 1**:
+
+To source ROS, open a terminal in your opened lab0 Rosject (a button in the bottom left corner), type in the following command:
+
+```source /opt/ros/humble/setup.bash``` 
+
+or if you are lazy, 
+
+```. /opt/ros/humble/setup.bash```
+
+* By default, ROS will be installed in `/opt/ros/[Distro]/`.
+
+Whenever you open a new terminal that you want to run ROS in, you have to source it. I know it is annoying but this is the reality. To make your life easier, you can add this command to `~/.bashrc`. It is a hidden file that will be executed automatically every time you open a new terminal. 
+
+**Task 1.5**:
+
+Open the code editor (the button next to terminal) in your lab0 Rosject, click "File" -> "Open...", and find the file named ".bashrc". Open it, and add ```source /opt/ros/humble/setup.bash```  to the end. Save it.
+
+### Part A. ROS Workspace. 
+According to the [documentation](https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Creating-A-Workspace/Creating-A-Workspace.html), "a workspace is a directory containing ROS 2 packages."
+
+So, it is a folder that will contain your code. That's all. However, there is one caveat here. This folder must follow a certain structure for ROS to work properly. 
+
+**Task 2** (create a ROS workspace):
+Go back to your terminal again, type the following command:
+
+```mkdir -p ~/mobilehri_ws/src```
+<details close>
+<summary>What does this mean?</summary>
+<br>
+Well, thought you will never ask.
+
+[mkdir](https://linux.die.net/man/1/mkdir) is a linux command, which will create a create a directory(folder) in your current path. If I am in the folder `\home\frank\`, `mkdir robot` will create the folder `\home\frank\robot`. `-p` means create parent directories if necessary. By default, you cannot create nested directories directly with mkdir. So, if you want to make a new folder that contains another folder, you need the `-p` flag.
+
+This line of code is equivalent to the following lines of code.
+```
+cd ~                # comment: move to home(~) directory
+mkdir mobilehri_ws       # if \mobilehri_ws does not exist
+cd mobilehri_ws
+mkdir src
+```
+</details>
+
+By convention, all the ROS code you right must live in the `src` directory.
+Take away here is that a ROS workspace is a directory/folder that contains another folder called `src`.
+
+***
+
+### Part B. ROS Package
+If you are familiar with Python, you must be familiar with packages like `numpy` and `matplotlib`. A package is just a way to efficiently group your code together. Within a workspace, you can have as many packages as you want. Therefore, the convention in the ROS community is that you should group similar functions in the same package name the package accordingly. Don't be afraid to create more packages, they can keep your code readable and clean. 
+
+Now, let's create a ROS package. 
+
+**Task 3**:
+
+Go to a terminal:
+
+```
+# Remember what we said about workspace, your code and packages must live in the /src folder
+cd ~/mobilehri_ws/src
+
+ros2 pkg create --build-type ament_python my_package --dependencies std_msgs rclpy
+
+# You will see that a bunch of files are generated for you automatically.
+```
+
+<details close>
+<summary>What does this mean?</summary>
+<br>
+By sourcing, your system now understands what `ros2` means. ROS comes with a list of prebuild functions for your convenience. Type `ros2 -h` in your terminal to see all of them.
+
+`--build-type` basically indicates what language you want to use for the package. If you mostly use C and C++, you should set this to `ament_cmake`. If your code only contains python, set it to `ament_python`. (read more [here](https://answers.ros.org/question/342118/ament_cmake-vs-ament_python/)).
+
+`my_package` is just the package name, it's what ever you want. It is always a good practice to forbid the space character in package names.
+
+`--dependencies`: you will need this if you know what other packages your package will rely on. For example, `std_msgs` is a library for standard messages (such as strings), so it is always a good idea to include it. `rclpy` is short for ROS Client Library for Python. You always need it if you are writing code in Python. 
+* After creating your package, what if you realize that you need to add other dependencies? Check the file tree below, you are able to add more dependencies in package.xml. Open it and see what's inside.
+</details>
+
+You will realize that now your `/src` folder contains another folder called `my_package`.
+
+Your current workspakce looks like this
+```
+mobilehri_ws/
+    src/
+        my_package/
+            my_package/          # Where your actual python code will live
+            package.xml          # Package info, can add more dependencies
+            resource/            # autogenerated by python
+            setup.cfg            # autogenerated to create executables
+            setup.py             # can add entry_points (terminal shortcuts)
+            test/
+```
+
+
+***
+## Node, Topics, Messages
+
+Before we go any further, let's talk about some of the core concept of ROS. 
+In a nutshell, ROS is simply a middleware that allows you to communicate with robots, and let robots communicate with other robots.
+
+If you are familiar with the concept of graphs, ROS 2 system can be thought of as a graph of nodes and edges, where nodes represent processes and edges represent communication. 
+
+Within the ROS graph, the most common concepts are the following:
+```
+(ROS Wiki Version)
+Nodes: A node is an entity that uses ROS to communicate with other nodes.
+
+Messages: ROS data type used when subscribing or publishing to a topic.
+
+Topics: Nodes can publish messages to a topic as well as subscribe to a topic to receive messages.
+```
+
+```
+(Frank's version) I will try to make some analogies here, but please ask if this isn't clear. 
+
+ROS is a graph that contains nodes and edges, so we can think of it as a network of nodes. I am going to make the analogy between ROS network and a network of people.
+
+Nodes: A node can be thought of as an piece of executable program that do things with ROS.  In our people network analogy, a node is just a person. They can either listen or speak, or doing both at the same time!
+
+Messages: The data content that is being passed around by nodes. In our analogy, they are words that one says to another. 
+
+Topics:  In our people network example, this can be thought of as the topic of the conversation. If a person (node) is interested in a topic, they can always join (subscribe) at any time or stop listening at any time if it's boring. If they have something to say about a certain topic, they can speak (publish) freely. Just like many people and speak and listen to the same topic at the same time, ROS nodes can publish to many topics and listent to many at the same time. 
+```
+
+This graph captures the essense of the ROS concept.
+
+[TODO]
+
+**Task 4**
+To speak, a node needs a special type of function called `publisher`.
+To listen, a node needs a special type of function called `subscriber`.
+ Let's populate our empty class with a simple publisher and subscriber pair!
+
+In your workspace, create two files (hri_publisher.py, and hri_subscriber.py) in the following folder (mobilehri_ws/src/my_package/my_package/). You can create files using the code editor, which is similar to the VSCode interface. Your file structure should look like this now.
+```
+mobilehri_ws/
+    src/
+        my_package/
+            my_package/          # Where your actual python code will live
+                __init__.py
+                hri_publisher.py     # NEW!
+                hri_subscriber.py    # NEW!
+            package.xml          # Package info, can add more dependencies
+            resource/            # autogenerated by python
+            setup.cfg            # autogenerated to create executables
+            setup.py             # can add entry_points (terminal shortcuts)
+            test/
+```
+
+**Task 4.1**:
+
+Let's make a talking node first! 
+Open the file hri_publisher.py. Let's write this line by line. 
+
+First type in the following lines to import required packages:
+```
+import rclpy
+from rclpy.node import Node
+from std_msgs.msg import String
+```
+Recall that when we create the pacakge in **Task 3**, we add dependencies to `rclpy` and `std_msgs`. We are using them now! `rclpy ` basic functionalities of ROS, abd we specifically need the `Node` class from `rclpy`, which provides basic functions of nodes in ROS.
+ `std_msgs` is a package that contains many different types of messages. Click [here](http://wiki.ros.org/std_msgs) to see a list of included message types. 
+
+Now, copy the following class to the hri_publisher.py.
+```
+class HRIPublisher(Node):
+
+    def __init__(self):
+        super().__init__('hri_publisher')
+        self.publisher_ = self.create_publisher(String, 'hri_topic', 10)
+        timer_period = 1  # seconds
+        self.timer = self.create_timer(timer_period, self.timer_callback)
+        self.i = 0
+
+    def timer_callback(self):
+        msg = String()
+        msg.data = 'Hey robot, how are you doing? (%d)' % self.i
+        self.publisher_.publish(msg)
+        self.get_logger().info('Chatting with the robot: "%s"' % msg.data)
+        self.i += 1
+```
+Let's decipher this line by line. 
+```
+Let's create a node called HRIPublisher
+class HRIPublisher(Node):
+```
+ROS 2 has a general template for how Node should operate. To create your own customized node, you need to make your class **inherit** the general Node class you just imported. If you are unfamiliar with the concept of inheritance, do a quick search [online](https://www.w3schools.com/python/python_inheritance.asp#:~:text=Inheritance%20allows%20us%20to%20define,class%2C%20also%20called%20derived%20class.)!
+
+```
+    # This function will be called whenever our Node is being created.
+```
+```
+    def __init__(self):
+        super().__init__('hri_publisher')
+```
+super() means this child class inherit all the methods and properties from its parent.Here, we ask our own HRIPublisher node to have all the basic functionalities of the `rclpy.Node` class, and give it a name called `hri_publisher`.
+```
+        self.publisher_ = self.create_publisher(String, 'hri_topic', 10)
+```
+Most important line of code! we are creating a publisher function using [self.create_publisher()](https://docs.ros2.org/latest/api/rclpy/api/node.html#rclpy.node.Node.create_publisher) function. 
+It is saying that our `HRIPublisher` node is going to publish messages of the type String, under the topic name `hri_topic`. The number 10 is specifing something called a qos_profile (quality of service) that specifies the rules on how messages should be handled. Read more about it [here](https://docs.ros.org/en/humble/Concepts/About-Quality-of-Service-Settings.html). We will talk more about this later.
+```
+        timer_period = 1.0  # seconds
+        self.timer = self.create_timer(timer_period, self.timer_callback)
+```
+ROS 2 node also provides you with a [timer](https://docs.ros2.org/latest/api/rclpy/api/node.html#rclpy.node.Node.create_publisher). What this means, is that after every `time_period` (1 second here), the node will automatically call the function `self.timer_callback`. So what is inside this `timer_callback` function? Let's look.
+
+```
+    def timer_callback(self):
+        msg = String()
+```
+Create a message with String type
+```
+        msg.data = 'Hey robot, how are you doing? (%d)' % self.i
+```
+Fill in the message with some content. Note that your message content must match the message type. How to check? Look at the definition of String() class in ROS [here](http://docs.ros.org/en/api/std_msgs/html/msg/String.html). String message type in ROS contains a field called data, that is of type `string`. What? This is confusion. Let's look at another example. 
+
+In the future, you will encouter a message type called Point. Look at its definition [here](http://docs.ros.org/en/api/geometry_msgs/html/msg/Point.html). It is saying that a Point message in ROS contains 3 pieces of information: x, y, z, and they must be floats.
+
+```
+        self.publisher_.publish(msg)
+```
+We are using our defined `publisher_` function to publish the msg! Our node starts talking!
+
+```
+        self.get_logger().info('Chatting with the robot: "%s"' % msg.data)
+```
+This is ROS's equivalent of `print()` in python, but a bit fancier. It will print extra information such as publishing time of the message. 
+```
+        self.i += 1
+```
+Well, we all know what this means. Just increment this number by 1.
+
+**So, this timer callback function is just publishing one message. But because this function is called every 1 second, we are publishing a message every second!**
+
+
+Now, we define a main function to handle a few ROS related things and use our freshly defined hri_publisher class. 
+```
+def main(args=None):
+    rclpy.init(args=args)
+```
+Initialize the `rclpy` library.
+```
+    hri_publisher = HRIPublisher()
+```
+Use our freshly defined class to create a node
+```
+    rclpy.spin(hri_publisher)
+```
+The `spin()` function spins the node. *After a node is created, items of work can be done (e.g. subscription callbacks) by spinning on the node.* 
+
+This is mostly relevant to our callback function. Remember we have a timer callback function? This will make sure it will be called properly. 
+```
+    hri_publisher.destroy_node()
+    rclpy.shutdown()
+```
+Handle shutdown gracefully.
+
+```
+if __name__ == '__main__':
+    main()
+```
+We just defined a few functions and classes, but none of them are called yet. Here we called the `main()` function we just wrote. 
+
+**Task 4.2**
+Give it a try!
+```
+cd ~/mobilehri_ws/src/my_package/my_package/
+python3 hri_publisher.py
+```
+You should see something like the following. 
+```
+[INFO] [1674735935.818313147] [hri_publisher]: Chatting with the robot: "Hey robot, how are you doing? (0)"
+[INFO] [1674735936.798105448] [hri_publisher]: Chatting with the robot: "Hey robot, how are you doing? (1)"
+[INFO] [1674735937.798246922] [hri_publisher]: Chatting with the robot: "Hey robot, how are you doing? (2)"
+[INFO] [1674735938.798238691] [hri_publisher]: Chatting with the robot: "Hey robot, how are you doing? (3)"
+[INFO] [1674735939.798006037] [hri_publisher]: Chatting with the robot: "Hey robot, how are you doing? (4)"
+```
+
+Note that this is not what is delivered to the topic. This is just what we printed to the terminal with `get_logger()`. 
+
+ROS provides you with a set of command line tools that help you inspect the nodes and topics. Let's try them! **Leave the previous terminal running, and open a new terminal.**
+
+```
+ros2 node list
+```
+See our `/hri_publisher` node here? 
+
+```
+ros2 topic list
+```
+This gives you the following. 
+```
+/hri_topic            # Ours!
+/parameter_events     # always there
+/rosout               # always there
+```
+
+To see what is being published under `/hri_topic`
+```
+ros2 topic echo /hri_topic
+```
+This will prints out what is actually being published by our node!
+
+* Note that our node is alone in the network now! It is talking but no one is listening. That's right, nodes don't need a listener in order to speak. 
