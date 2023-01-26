@@ -4,6 +4,19 @@ For the first lab, we will just focus on getting everyone set up with [ROS 2](ht
 
 In lab on Thursday, we will walk you through the basic concepts for ROS and play with some basic functionalities of it.
 
+## Set up your Course Github Repo
+
+Fork the [Mobile HRI Lab Page repository](https://github.com/FAR-Lab/Mobile_HRI_Lab_Hub); detailed instructions for creating your lab hub and updating your labs are [here](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/blob/2022Fall/readings/Submitting%20Labs.md).
+
+When submitting your assignments, you will update your assignments on your class lab hub, and post a link to your Github lab page on Canvas. Graders will review the assignments sometime after the due date. Late assignments (e.g. your assignment is missing/incomplete at our grading time, which is after the due date) will be penalized by one letter grade per day late.
+
+## Install VSCode
+Install VSCode [here](https://code.visualstudio.com/).
+
+Then, install Remote-SSH extension within VSCode.
+![image](https://user-images.githubusercontent.com/20778137/214525990-cc42652c-1581-4bd8-8440-5df997f84095.png)
+
+
 ## Install Foxglove studio.
 Foxglove studio is a visualization tool for ROS 2. It is relatively new but very powerful. Please download it on you laptop [here](https://foxglove.dev/studio).
 * For windows users, if you get a Windows Security Alert upon opening the app regarding network permissions, make sure you select **both private (not selected by default) and public network**.
@@ -19,6 +32,9 @@ the lab on Thursday.
 
 #### Linux
 If you have a linux system, great! Please follow the instructions [here](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debians.html) to install ROS 2 Humble. If possible, you should do desktop install ```ros-humble-desktop```. Development tools are not required. 
+
+#### SBC (if you happen to have a spare raspberry pi 3/4), bring those!
+Install Ubuntu 22.04 system [Here](https://ubuntu.com/download/raspberry-pi). Then follow the instructions [here](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debians.html).
 
 #### Windows
 Method 1 (recommended): Windows setup is a bit harder than Linux machines. Please follow the instructions [here](https://docs.ros.org/en/humble/Installation/Windows-Install-Binary.html) to install ROS 2 Humble. 
@@ -38,8 +54,4 @@ connect to your remote robots from docker. This is only good for compiling and t
 For Windows, please follow the guide [here](https://learn.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse?tabs=gui).
 Mac and Linux machines should have ssh by default.
 
-## Set up your Course Github Repo
 
-Fork the [Mobile HRI Lab Page repository](https://github.com/FAR-Lab/Mobile_HRI_Lab_Hub); detailed instructions for creating your lab hub and updating your labs are [here](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/blob/2022Fall/readings/Submitting%20Labs.md).
-
-When submitting your assignments, you will update your assignments on your class lab hub, and post a link to your Github lab page on Canvas. Graders will review the assignments sometime after the due date. Late assignments (e.g. your assignment is missing/incomplete at our grading time, which is after the due date) will be penalized by one letter grade per day late.
