@@ -75,7 +75,9 @@ You will need:
 3. Click "Create a New Rosject", in the ROS Distro drop down, select `ROS2 Humble`.
 4.  Name the project "lab0" and create the project.
 
-### (Due next Tuesday) Deliverables for this lab are:
+***
+### Deliverables for this lab are:
+_(Due next Tuesday)_ 
 1. The folder of a ROS package that contains a publisher and a subscriber (that communicates with each other - you will learn this today.)
 2. List 5 applications that you think requires a pair of publisher and subscriber.
 3. Tell us about your experience learning ROS. What is easy and what is difficult to understand?
