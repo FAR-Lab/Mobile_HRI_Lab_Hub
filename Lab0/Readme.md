@@ -4,6 +4,12 @@ For the first lab, we will just focus on getting everyone set up with [ROS 2](ht
 
 In lab on Thursday, we will walk you through the basic concepts for ROS and play with some basic functionalities of it.
 
+## Set up your Course Github Repo
+
+Fork the [Mobile HRI Lab Page repository](https://github.com/FAR-Lab/Mobile_HRI_Lab_Hub); detailed instructions for creating your lab hub and updating your labs are [here](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/blob/2022Fall/readings/Submitting%20Labs.md).
+
+When submitting your assignments, you will update your assignments on your class lab hub, and post a link to your Github lab page on Canvas. Graders will review the assignments sometime after the due date. Late assignments (e.g. your assignment is missing/incomplete at our grading time, which is after the due date) will be penalized by one letter grade per day late.
+
 ## Install VSCode
 Install VSCode [here](https://code.visualstudio.com/).
 
@@ -48,8 +54,4 @@ connect to your remote robots from docker. This is only good for compiling and t
 For Windows, please follow the guide [here](https://learn.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse?tabs=gui).
 Mac and Linux machines should have ssh by default.
 
-## Set up your Course Github Repo
 
-Fork the [Mobile HRI Lab Page repository](https://github.com/FAR-Lab/Mobile_HRI_Lab_Hub); detailed instructions for creating your lab hub and updating your labs are [here](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/blob/2022Fall/readings/Submitting%20Labs.md).
-
-When submitting your assignments, you will update your assignments on your class lab hub, and post a link to your Github lab page on Canvas. Graders will review the assignments sometime after the due date. Late assignments (e.g. your assignment is missing/incomplete at our grading time, which is after the due date) will be penalized by one letter grade per day late.
