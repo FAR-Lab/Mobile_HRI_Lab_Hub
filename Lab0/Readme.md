@@ -84,7 +84,7 @@ You will hear me say this a lot. This is very important. Without sourcing your e
 
 So, what do I mean by source? Officially, it means adding environment variables to the system path that are crucial for the system to identify and execute ROS functions (Got my answer from this [forum](https://answers.ros.org/question/188309/what-does-source-command-actually-do/)). It simply means tell your system what ROS is and where it is. So, if your computer is asking you what ROS is, you probably forgot to source it.
 
-**Task 1**:
+#### Task 1:
 
 To source ROS, open a terminal in your opened lab0 Rosject (a button in the bottom left corner), type in the following command:
 
@@ -98,7 +98,7 @@ or if you are lazy,
 
 Whenever you open a new terminal that you want to run ROS in, you have to source it. I know it is annoying but this is the reality. To make your life easier, you can add this command to `~/.bashrc`. It is a hidden file that will be executed automatically every time you open a new terminal. 
 
-**Task 1.5**:
+#### Task 1.5:
 
 Open the code editor (the button next to terminal) in your lab0 Rosject, click "File" -> "Open...", and find the file named ".bashrc". Open it, and add ```source /opt/ros/humble/setup.bash```  to the end. Save it.
 
@@ -107,7 +107,7 @@ According to the [documentation](https://docs.ros.org/en/humble/Tutorials/Beginn
 
 So, it is a folder that will contain your code. That's all. However, there is one caveat here. This folder must follow a certain structure for ROS to work properly. 
 
-**Task 2** (create a ROS workspace):
+#### Task 2 (create a ROS workspace):
 Go back to your terminal again, type the following command:
 
 ```mkdir -p ~/mobilehri_ws/src```
@@ -137,7 +137,7 @@ If you are familiar with Python, you must be familiar with packages like `numpy`
 
 Now, let's create a ROS package. 
 
-**Task 3**:
+#### Task 3:
 
 Go to a terminal:
 
@@ -200,13 +200,19 @@ Topics: Nodes can publish messages to a topic as well as subscribe to a topic to
 ```
 (Frank's version) I will try to make some analogies here, but please ask if this isn't clear. 
 
-ROS is a graph that contains nodes and edges, so we can think of it as a network of nodes. I am going to make the analogy between ROS network and a network of people.
+ROS is a graph that contains nodes and edges, so we can think of it as a network of nodes. 
+I am going to make the analogy between ROS network and a network of people.
 
-Nodes: A node can be thought of as an piece of executable program that do things with ROS.  In our people network analogy, a node is just a person. They can either listen or speak, or doing both at the same time!
+Nodes: A node can be thought of as an piece of executable program that do things with ROS.  
+In our people network analogy, a node is just a person. They can either listen or speak, or doing both at the same time!
 
-Messages: The data content that is being passed around by nodes. In our analogy, they are words that one says to another. 
+Messages: The data content that is being passed around by nodes. 
+In our analogy, they are words that one says to another. 
 
-Topics:  In our people network example, this can be thought of as the topic of the conversation. If a person (node) is interested in a topic, they can always join (subscribe) at any time or stop listening at any time if it's boring. If they have something to say about a certain topic, they can speak (publish) freely. Just like many people and speak and listen to the same topic at the same time, ROS nodes can publish to many topics and listent to many at the same time. 
+Topics:  In our people network example, this can be thought of as the topic of the conversation. 
+If a person (node) is interested in a topic, they can always join (subscribe) at any time or stop listening at any time if it's boring. 
+If they have something to say about a certain topic, they can speak (publish) freely. 
+Just like many people and speak and listen to the same topic at the same time, ROS nodes can publish to many topics and listent to many at the same time. 
 ```
 
 This graph captures the essense of the ROS concept.
@@ -214,7 +220,7 @@ This graph captures the essense of the ROS concept.
 ![image](https://user-images.githubusercontent.com/20778137/214837850-beedc2ec-c26a-42fb-a3f0-0d952e9e342a.png)
 Picture source: https://docs.ros.org/en/humble/Tutorials/Beginner-CLI-Tools/Understanding-ROS2-Topics/Understanding-ROS2-Topics.html
 
-**Task 4**
+#### Task 4
 To speak, a node needs a special type of function called `publisher`.
 To listen, a node needs a special type of function called `subscriber`.
  Let's populate our empty class with a simple publisher and subscriber pair!
@@ -235,7 +241,7 @@ mobilehri_ws/
             test/
 ```
 
-**Task 4.1**:
+#### Task 4.1
 
 Let's make a talking node first! 
 Open the file hri_publisher.py. Let's write this line by line. 
@@ -350,7 +356,7 @@ if __name__ == '__main__':
 ```
 We just defined a few functions and classes, but none of them are called yet. Here we called the `main()` function we just wrote. 
 
-**Task 4.2**
+#### Task 4.2
 Give it a try!
 ```
 cd ~/mobilehri_ws/src/my_package/my_package/
