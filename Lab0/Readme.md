@@ -14,8 +14,8 @@ When submitting your assignments, you will update your assignments on your class
 Install VSCode [here](https://code.visualstudio.com/).
 
 Then, install Remote-SSH extension within VSCode.
-![image](https://user-images.githubusercontent.com/20778137/214525990-cc42652c-1581-4bd8-8440-5df997f84095.png =250x)
 
+<img src="[Assets/icon.png](https://user-images.githubusercontent.com/20778137/214525990-cc42652c-1581-4bd8-8440-5df997f84095.png)" width="250">
 
 ## Install Foxglove studio.
 Foxglove studio is a visualization tool for ROS 2. It is relatively new but very powerful. Please download it on you laptop [here](https://foxglove.dev/studio).
