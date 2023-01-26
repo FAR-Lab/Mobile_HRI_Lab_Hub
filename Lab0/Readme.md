@@ -564,6 +564,7 @@ rqt_graph
 
 ```
 You should be able to see both of your nodes connected through the topic.
+
 <img src="https://user-images.githubusercontent.com/20778137/214879958-adb5eeb7-3aab-4b43-947d-f445b6cf3ed1.png" width="300">
 
 
