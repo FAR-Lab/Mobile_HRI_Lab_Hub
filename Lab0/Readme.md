@@ -340,6 +340,25 @@ Well, we all know what this means. Just increment this variable `i` by 1.
 
 Now, we define a main function to handle a few ROS related things and use our freshly defined hri_publisher class. This is very much a template that you can just 
 reuse in the future.
+
+Copy the following chunk of code to `hri_publisher.py`, following the class definition of HRIPublisher.
+```
+def main(args=None):
+    rclpy.init(args=args)
+
+    hri_publisher = HRIPublisher()
+
+    rclpy.spin(hri_publisher)
+
+    hri_publisher.destroy_node()
+    rclpy.shutdown()
+
+
+if __name__ == '__main__':
+    main()
+```
+
+
 ```
 def main(args=None):
     rclpy.init(args=args)
