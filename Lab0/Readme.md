@@ -66,7 +66,7 @@ Picture credit: http://geldonsgaming.blogspot.com/2012/08/regarding-reinventing-
 
 There are many distributions of ROS (for different operating systems, like Linux, Windows, and MacOS and new updates, like ROS 1 or ROS 2). Since ROS is initially (and still) mostly based on Linux systems, the release of ROS versions closely matches the release of Ubuntu operating systems. If you have worked with ROS before, you may probably know that there are 2 main versions of ROS: ROS 1 and ROS 2. In this class, we will use ROS 2 (called distribution Humble), which is the latest distribution of ROS 2. The documentation contains a lot of helpful information and tutorials, please take a moment and skim through the available resources listed on this [website](https://docs.ros.org/en/humble/index.html).
 
-### Prep
+### In-lab setup
 Since most students are using Mac, which does not support ROS natively, we decide to switch to a web-based development environment just for this lab to get you started on ROS 2 without dealing with the setup process (Thanks, Frank! -natalie).
 
 You will need:
@@ -75,14 +75,7 @@ You will need:
 3. Click "Create a New Rosject", in the ROS Distro drop down, select `ROS2 Humble`.
 4.  Name the project "lab0" and create the project.
 
-***
-### Deliverables for this lab are:
-_(Due next Tuesday)_ Place these in the [deliverables section at the bottom of this page](#deliverables) so that it is easy for the grader to find.
-1. The folder of a ROS package that contains a publisher and a subscriber
-2. List 5 questions you have about ROS following the tutorial, answers you have and things you still don't get
-3. Feedback on the bootcamp: What was easy and what was difficult to understand?
 
-***
 The lab today is based on the tutorials on the official [ROS 2 website](https://docs.ros.org/en/humble/index.html). ROS tutorials are generally good, and the community is very friendly. However, when I first started learning ROS, I found the tutorials a bit hard to understand. Therefore, I added some of my own sauce to the tutorial and hopefully this will help you understand it a bit better. Please ask freely if you run into any questions, you should never be alone facing ROS problems. 
 
 ### Source the environment
@@ -186,7 +179,7 @@ mobilehri_ws/
 ```
 
 
-## Node, Topics, Messages
+### Part 3. Node, Topics, Messages
 
 Before we go any further, let's talk about some of the core concept of ROS. 
 In a nutshell, ROS is simply a middleware that allows you to communicate with robots, and let robots communicate with other robots. 
@@ -561,6 +554,16 @@ python3 hri_subscriber.py
 ```
 
 In terminal 2, you should see that whenever a message is published in terminal 1, the subscriber will respond to it!
+
+ROS also offers a debugging tool for you to visualize your ROS graph.
+```
+# Open another terminal, leave terminal 1 and 2 running.
+rqt_graph
+
+```
+You should be able to see both of your nodes connected through the topic.
+![image](https://user-images.githubusercontent.com/20778137/214879958-adb5eeb7-3aab-4b43-947d-f445b6cf3ed1.png)
+
 
 ## Deliverables
 
