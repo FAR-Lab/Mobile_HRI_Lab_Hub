@@ -533,8 +533,11 @@ As you can see, the structure is the same (Because it is also just a node).
 ```
 This time, we are creating a [subscriber](https://docs.ros2.org/latest/api/rclpy/api/node.html#rclpy.node.Node.create_subscription). 
 `create_subscription(msg_type, topic, callback, qos_profile)`
-The first parameter is message type. This parameter must match with the message type of the topic, otherwise they are not speaking the same language! 
+
+The first parameter defines message type. This parameter must match with the message type of the topic, otherwise they are not speaking the same language! 
+
 The second parameter is the topic name. This is the topic you want to listen to. 
+
 Like the timer we encountered in the publisher section, subscribers also have callback functions (here, it is named `self.listener_callback`).  What's different is that the timer callback will be called with predefined frequency, and subscriber callbacks will be called every time it receives a new message from subscribed topic.
 
 Let's try it!
