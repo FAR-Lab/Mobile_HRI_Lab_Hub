@@ -14,7 +14,7 @@ When submitting your assignments, you will update your assignments on your class
 Install VSCode [here](https://code.visualstudio.com/).
 
 Then, install Remote-SSH extension within VSCode.
-![image](https://user-images.githubusercontent.com/20778137/214525990-cc42652c-1581-4bd8-8440-5df997f84095.png)
+![image](https://user-images.githubusercontent.com/20778137/214525990-cc42652c-1581-4bd8-8440-5df997f84095.png =250x)
 
 
 ## Install Foxglove studio.
@@ -58,7 +58,7 @@ Mac and Linux machines should have ssh by default.
 ***
 Robot Operating System (ROS) has been the standard open source tool for the robotics comminity since 2007. Before ROS, each research lab had their own code base and infrastructure, which made sharing and collaboration very difficult to manage. ROS provides a unified space for the robotics community to contribute and share.
 
-![image](https://user-images.githubusercontent.com/20778137/214838967-7bd21667-1181-4a7a-8af6-c17b6d0ef483.png)
+![image](https://user-images.githubusercontent.com/20778137/214838967-7bd21667-1181-4a7a-8af6-c17b6d0ef483.png =250x)
 Picture src: http://geldonsgaming.blogspot.com/2012/08/regarding-reinventing-wheel.html
 
 There are many distributions of ROS. Since ROS is initially (and still) mostly based on Linux systems, the release of ROS versions is somewhat matching the release of Ubuntu systems. If you worked with ROS before, you may probably know that there are 2 main versions of ROS, namely ROS 1 and ROS 2. In this class, we will use ROS 2 (distribution Humble), which is the latest distribution of ROS 2. The documentation contains a lot of helpful information and tutorial, please take a moment and skim through the available resources listed on this [website](https://docs.ros.org/en/humble/index.html).
