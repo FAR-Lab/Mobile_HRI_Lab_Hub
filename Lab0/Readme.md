@@ -572,5 +572,14 @@ You should be able to see both of your nodes connected through the topic.
 
 
 1. Link to the folder of a ROS package that contains a publisher and a subscriber 
+
 2. List 5 questions you have about ROS following the tutorial, answers you have found and things you still don't get
+    - I'm still unsure of exaclty how what we did will allow us to control a mobile robot?
+    - Are there specific code(s) that create movement or is movement created through messages sent/received by publishing/subscribing?
+    - In the hri_subscriber.py file, is the callback function always going to be used or is it mainly for the messages sent/received?
+    - I don't have 5 questions...I will edit this if I come up with more questions.
+
 3. Feedback on the bootcamp: What was easy and what was difficult to understand?
+    - Overall the bootcamp was pretty easy to follow after the initial setup, there were some spots where the directions could be more clear such as
+      when we open the (ROS) terminal window for the first time. I thought it meant we need to open up terminal from our local computer. Just small     
+      things like that would be great if they are cleaned up.
