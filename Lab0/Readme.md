@@ -131,13 +131,13 @@ By convention, all the ROS code you right must live in the `src` directory.
 
 
 ### Part B. ROS Package
-If you are familiar with Python, you must be familiar with packages like `numpy` and `matplotlib`. A package is just a way to efficiently group your code together. ROS is also organized by packages. You can create package for your own robot to move around, to see, and to respond. Within a workspace, you can have as many packages as you want. Therefore, the convention in the ROS community is that you should group similar functions in the same package, and name the package accordingly. Don't be afraid to create more packages, they can keep your code readable and clean. 
+If you are familiar with Python, you must be familiar with packages like `numpy` and `matplotlib`. A package is just a way to efficiently group your code together. ROS is also organized by packages. You can create a package for your own robot to move around, to see, and to respond to the environment. Within a workspace, you can have as many packages as you want. Therefore, the convention in the ROS community is that you group similar functions in the same package, and name the package accordingly. Don't be afraid to create more packages, they can keep your code readable and clean. 
 
-Now, let's create a ROS package. 
+Now, let's create a ROS package! yay.
 
 #### Task 3:
 
-Go to a terminal:
+Go to a terminal (aka, "webshell"):
 
 ``` bash
 # Remember what we said about workspace, your code and packages must live in the /src folder
@@ -469,7 +469,7 @@ This will prints out what is actually being published by our node!
 
 * Note that our node is alone in the network now! It is talking but no one is listening. That's right, nodes don't need a listener in order to speak. 
 
-To close the program, click the terminal that is running, and press `"Ctrl + C"` (Might be `Cmd + C` on Mac, you guys let me know).
+To close the program, click the terminal that is running, and press `Ctrl + C`, `control + C` on mac.
 
 #### Task 5 Make a node that listens!
 
