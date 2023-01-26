@@ -42,7 +42,7 @@ Method 1 (recommended): Windows setup is a bit harder than Linux machines. Pleas
 Method 2: As an alternative, you can leverage the power of [Windows Subsystem for Linux (WSL)](https://learn.microsoft.com/en-us/windows/wsl/install) and install ubuntu 22.04 inside your windows machine. (For older version of Windows 10, follow instructions [here](https://pureinfotech.com/install-windows-subsystem-linux-2-windows-10/#:~:text=To%20install%20WSL2%20on%20Windows,%E2%80%9Cwsl%20%E2%80%93update%E2%80%9D%20command.).) Then, follow the linux installation instructions [here](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debians.html) to install ROS inside your WSL.
 * This is not recommended because you may run into firewall issures. Also, you cannot connect to remote robots through your laptop later. However, this is a great way to do robot simulations.
 
-#### Mac (not recommended)
+#### Mac (you can try it, not guranteed to work)
 Method 1: macOS is no longer a target platform for future ROS realeases, this means you need to compile it from source.
 If you have macOS Mojave (10.14) and some free time, give [this](https://docs.ros.org/en/humble/Installation/Alternatives/macOS-Development-Setup.html) a try.
 Otherwise, we will provide raspberry pi as alternatives during the lab.
