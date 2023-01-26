@@ -4,28 +4,30 @@ For the first lab, we will just focus on getting everyone set up with [ROS 2](ht
 
 In lab on Thursday, we will walk you through the basic concepts for ROS and play with some basic functionalities of it.
 
-## Set up your Course Github Repo
+## Preparation Activities
+
+### Set up your Course Github Repo
 
 Fork the [Mobile HRI Lab Page repository](https://github.com/FAR-Lab/Mobile_HRI_Lab_Hub); detailed instructions for creating your lab hub and updating your labs are [here](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/blob/2022Fall/readings/Submitting%20Labs.md).
 
 When submitting your assignments, you will update your assignments on your class lab hub, and post a link to your Github lab page on Canvas. Graders will review the assignments sometime after the due date. Late assignments (e.g. your assignment is missing/incomplete at our grading time, which is after the due date) will be penalized by one letter grade per day late.
 
-## Install VSCode
+### Install VSCode
 Install VSCode [here](https://code.visualstudio.com/).
 
 Then, install Remote-SSH extension within VSCode.
 
 <img src="https://user-images.githubusercontent.com/20778137/214525990-cc42652c-1581-4bd8-8440-5df997f84095.png" width="600">
 
-## Install Foxglove studio.
+### Install Foxglove studio.
 Foxglove studio is a visualization tool for ROS 2. It is relatively new but very powerful. Please download it on you laptop [here](https://foxglove.dev/studio).
 * For windows users, if you get a Windows Security Alert upon opening the app regarding network permissions, make sure you select **both private (not selected by default) and public network**.
 
-## Install VNC Viewer
+### Install VNC Viewer
 Download VNC Viewer from [here](https://www.realvnc.com/en/connect/download/viewer/).
 
 
-## Install ROS2 Humble on your machine. (Only recommended for Linux and Windows Users.)
+### Install ROS2 Humble on your machine. (Only recommended for Linux and Windows Users.)
 In the past, ROS has been very exclusive. Your kind of have to use a linux based system to use it. As an upgrade, ROS 2 now supports more [platforms](https://www.ros.org/reps/rep-2000.html#rolling-ridley-june-2020-ongoing), but the community still prefers linux over other platforms. Try your best to install 
 ROS on your laptop, but this is definitely **not** a requirement to complete the course. Even if you have trouble installing it, please still bring your laptop to
 the lab on Thursday. 
@@ -50,7 +52,8 @@ Otherwise, we will provide raspberry pi as alternatives during the lab.
 Medthod 2: If you are familiar with [docker](https://docs.docker.com/desktop/install/mac-install/), [here](https://hub.docker.com/r/osrf/ros2/) is a docker image for you. This is not recommended because you are not able to 
 connect to your remote robots from docker. This is only good for compiling and testing code.
 
-#### If you have trouble installing ROS, please make sure your ssh is running properly before coming to the lab on Thursday. 
+### SSH (Particularly important if you don't have ROS on your own system)
+If you have trouble installing ROS, please make sure your ssh is running properly before coming to the lab on Thursday. 
 For Windows, please follow the guide [here](https://learn.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse?tabs=gui).
 Mac and Linux machines should have ssh by default.
 
