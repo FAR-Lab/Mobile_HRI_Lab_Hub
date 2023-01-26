@@ -56,14 +56,17 @@ Mac and Linux machines should have ssh by default.
 
 ## ROS BOOTCAMP (In-lab activity, 1/26/2023)
 ***
-Robot Operating System (ROS) has been the standard open source tool for the robotics comminity since 2007. Before ROS, each research lab had their own code base and infrastructure, which makes sharing and collaboration very difficult to manage. ROS provides a unified space for the robotics community to contribute and share.
+Robot Operating System (ROS) has been the standard open source tool for the robotics comminity since 2007. Before ROS, each research lab had their own code base and infrastructure, which made sharing and collaboration very difficult to manage. ROS provides a unified space for the robotics community to contribute and share.
 
-There are many distributions of ROS. Since ROS is initially (and still) mostly based on Linux systems, the release of ROS versions is largely affected by the release of Ubuntu systems. If you worked with ROS before, you may probably know that there are 2 main versions of ROS, namely ROS 1 and ROS 2. In this class, we will use ROS 2 (distribution Humble), which is the latest distribution of ROS 2. The documentation contains a lot of helpful information and tutorial, please take a moment and skim through the available resources listed on this [website](https://docs.ros.org/en/humble/index.html).
+![image](https://user-images.githubusercontent.com/20778137/214838967-7bd21667-1181-4a7a-8af6-c17b6d0ef483.png)
+Picture src: http://geldonsgaming.blogspot.com/2012/08/regarding-reinventing-wheel.html
+
+There are many distributions of ROS. Since ROS is initially (and still) mostly based on Linux systems, the release of ROS versions is somewhat matching the release of Ubuntu systems. If you worked with ROS before, you may probably know that there are 2 main versions of ROS, namely ROS 1 and ROS 2. In this class, we will use ROS 2 (distribution Humble), which is the latest distribution of ROS 2. The documentation contains a lot of helpful information and tutorial, please take a moment and skim through the available resources listed on this [website](https://docs.ros.org/en/humble/index.html).
 
 
 ***
 ### Prep
-Since most students are using Mac, which does not support ROS natively, we decided to switch to a web-based development environment just for this lab to get you started on ROS 2 without dealing with the setup process. 
+Since most students are using Mac, which does not support ROS natively, we decide to switch to a web-based development environment just for this lab to get you started on ROS 2 without dealing with the setup process. 
 
 You will need:
 1. Go the [the Construct website](https://www.theconstructsim.com/) and create a free account.
@@ -71,7 +74,7 @@ You will need:
 3. Click "Create a New Rosject", in the ROS Distro drop down, select `ROS2 Humble`.
 4.  Name the project "lab0" and create the project.
 
-Deliverables for this lab are:
+### (Due next Tuesday) Deliverables for this lab are:
 1. A ROS package that contains a publisher and a subscriber that communicates with each other. (You will learn this today.)
 2. List 5 applications that you think requires a pair of publisher and subscriber.
 3. Tell us what your experience starting to learn ROS. What is easy to understand and what is difficult to comprehend.
