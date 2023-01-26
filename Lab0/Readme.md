@@ -136,7 +136,6 @@ mkdir src
 By convention, all the ROS code you right must live in the `src` directory.
 * Take away here is that a ROS workspace is a directory/folder that contains another folder called `src`. All your code must live in `src`.
 
-***
 
 ### Part B. ROS Package
 If you are familiar with Python, you must be familiar with packages like `numpy` and `matplotlib`. A package is just a way to efficiently group your code together. ROS is also organized by packages. You can create package for your own robot to move around, to see, and to respond. Within a workspace, you can have as many packages as you want. Therefore, the convention in the ROS community is that you should group similar functions in the same package, and name the package accordingly. Don't be afraid to create more packages, they can keep your code readable and clean. 
@@ -187,7 +186,6 @@ mobilehri_ws/
 ```
 
 
-***
 ## Node, Topics, Messages
 
 Before we go any further, let's talk about some of the core concept of ROS. 
