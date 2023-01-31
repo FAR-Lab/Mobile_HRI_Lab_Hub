@@ -7,7 +7,7 @@ Please place links here to the README.md's for each of your labs here:
 
 [Lab 1. Interaction First](Lab1/Readme.md)
 
-Lab 2. Prototype the Robot
+[Lab 2. Prototype the Robot](Lab2/Readme.md)
 
 Lab 3. Make the Robot Move
 
