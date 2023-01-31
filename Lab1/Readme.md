@@ -36,7 +36,7 @@ D) [Wizard the device](#part-d-wizard-the-device)
 Labs are due on Tuesdays before class. Make sure this page is linked to on your main class hub page.
 
 ## Part A. Build Your Clonebot
-Follow the instructions [here](CloneBot_Instruction.pdf.md) to build your robot!
+Follow the instructions [here](https://drive.google.com/file/d/1B0f4BZsxJJb_qcCk3-EbnDA-uw8poEDj/view?usp=share_link) to build your robot!
 The instructions are arranged in stages. At the beginning of each stage, each group must select one (and only one) representitive to pick up parts from us. 
 
 After you finish your robot, plug in power (plug in the USB to the battery pack). Following the instructions below to connect to your robot.
