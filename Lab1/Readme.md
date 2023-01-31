@@ -31,7 +31,6 @@ B) [Plan](#part-b-plan)
 
 C) [Act out the interaction](#part-c-act-out-the-interaction) 
 
-D) [Wizard the device](#part-d-wizard-the-device) 
 
 Labs are due on Tuesdays before class. Make sure this page is linked to on your main class hub page.
 
