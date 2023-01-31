@@ -1,5 +1,3 @@
-
-
 # Interaction First
 
 In this lab, you will modify a robotic creature (ConeBot) that is originally designed by [Dr. Rei Lee](https://infosci.cornell.edu/~reilee/), a friend of our lab. The [ConeBot](https://infosci.cornell.edu/~reilee/ConeBot/) is a shy robot that hides under a small traffic cone. It is adventuring the world by itself but hopes people don't notice it at all.
@@ -15,10 +13,9 @@ For this week's lab (and also the following week), you will work in groups of 3.
 1. Smart Phone (Laptop or Tablets also work) -- The main required feature is that the phone needs to connect to WiFi and display a webpage.
 
 ### Deliverables for this lab are: 
-1. 7 Storyboards
-2. 3 Sketches/photos of costumed devices
+1. 5 Storyboards
 3. Any reflections you have on the process
-4. Video sketch of 3 prototyped interactions
+4. Video sketch of 3 prototyped interactions (selected from the 5 storyboards)
 5. Submit the items above in the lab1 folder of your class [Github page], either as links or uploaded files. Each group member should post their own copy of the work to their own Lab Hub, even if some of the work is the same from each person in the group.
 
 ### The Report
@@ -64,14 +61,14 @@ Leverage the possible motions of Clonebot and the extra degree of freedom provid
 
 \*\***Describe your setting, players, activity and goals here.**\*\*
 
-Storyboards are a tool for visually exploring a users interaction with a device. They are a fast and cheap method to understand user flow, and iterate on a design before attempting to build on it. Take some time to read through this explanation of [storyboarding in UX design](https://www.smashingmagazine.com/2017/10/storyboarding-ux-design/). Sketch seven storyboards of the interactions you are planning. **It does not need to be perfect**, but must get across the behavior of the CloneBot and the other characters in the scene. 
+Storyboards are a tool for visually exploring a users interaction with a device. They are a fast and cheap method to understand user flow, and iterate on a design before attempting to build on it. Take some time to read through this explanation of [storyboarding in UX design](https://www.smashingmagazine.com/2017/10/storyboarding-ux-design/). Sketch five storyboards of the interactions you are planning. **It does not need to be perfect**, but must get across the behavior of the CloneBot and the other characters in the scene. 
 
 \*\***Include pictures of your storyboards here**\*\*
 
 
 ## Part C. Act out the Interaction
 
-Try physically acting out the interaction you planned with your teammates. (Do you plug in the CloneBot just yet.)
+Select 3 of the 5 storyboards to act out. Try physically acting out the 3 interactions you planned with your teammates. (Do not plug in the CloneBot just yet.) Record these video clips and submit them (Unlisted youtube links are fine).
 
 \*\***Are there things that seemed better on paper than acted out?**\*\*
 
