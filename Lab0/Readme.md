@@ -574,3 +574,14 @@ You should be able to see both of your nodes connected through the topic.
 1. Link to the folder of a ROS package that contains a publisher and a subscriber 
 2. List 5 questions you have about ROS following the tutorial, answers you have found and things you still don't get
 3. Feedback on the bootcamp: What was easy and what was difficult to understand?
+
+
+5 Questions I had :
+1. I was a little confused about how to link the ROS file down to github. I eventually downloaded it locally and copied it to github.
+2. Didn't find the hidden file we created after we carried out this : . ~/.bashrc to put the command line inside. I found online to show the hidden file locally but failed to do that on the ROS platform. 
+3. What is qos_profile (quality of service)? I clicked into the links of introduction that followed, and I wonder if 10 is changed to 20, what would happen?
+4.Wonder if we can shut down the conversation automatically by program when let;s say t=1hr time is reached? 
+5.When 2 terminals opened, it seems like the system is slowed. Any ways to improve the processing time?
+
+Feedback:
+I liked it. It was easy to follow.
