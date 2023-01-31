@@ -11,6 +11,7 @@ For this week's lab (and also the following week), you will work in groups of 3.
 
 ### For this lab, you will need:
 1. Smart Phone (Laptop or Tablets also work) -- The main required feature is that the phone needs to connect to WiFi and display a webpage.
+2. To work in a group of 3 (encouraged) to 4 people (if necessary).
 
 ### Deliverables for this lab are: 
 1. 5 Storyboards
@@ -35,13 +36,11 @@ D) [Wizard the device](#part-d-wizard-the-device)
 Labs are due on Tuesdays before class. Make sure this page is linked to on your main class hub page.
 
 ## Part A. Build Your Clonebot
-Each group must select one (and only one) representitive to pick up parts from us. 
+Follow the instructions [here](CloneBot_Instruction.pdf.md) to build your robot!
+The instructions are arranged in stages. At the beginning of each stage, each group must select one (and only one) representitive to pick up parts from us. 
 
-You will need the following components:
-
-
-Now, plug in power. Following the following instruction to connect to your robot.
-1. Connect to WiFi ""
+After you finish your robot, plug in power (plug in the USB to the battery pack). Following the following instruction to connect to your robot.
+1. Connect to WiFi "MobileHRI-x", where x is the number assigned to the ESP-32.
 2. Open a brower, in the address line, type in 192.168.4.1
 3. You should be see a control interface like the following. Try out different buttons and see what they do.
 
