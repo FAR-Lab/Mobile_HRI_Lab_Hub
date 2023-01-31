@@ -39,10 +39,10 @@ Labs are due on Tuesdays before class. Make sure this page is linked to on your 
 Follow the instructions [here](CloneBot_Instruction.pdf.md) to build your robot!
 The instructions are arranged in stages. At the beginning of each stage, each group must select one (and only one) representitive to pick up parts from us. 
 
-After you finish your robot, plug in power (plug in the USB to the battery pack). Following the following instruction to connect to your robot.
+After you finish your robot, plug in power (plug in the USB to the battery pack). Following the instructions below to connect to your robot.
 1. Connect to WiFi "MobileHRI-x", where x is the number assigned to the ESP-32.
 2. Open a brower, in the address line, type in 192.168.4.1
-3. You should be see a control interface like the following. Try out different buttons and see what they do.
+3. You should be see a control interface. Try out different buttons and see what they do.
 
 ## Part B. Plan 
 
