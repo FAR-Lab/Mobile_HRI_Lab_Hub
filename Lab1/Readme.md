@@ -13,6 +13,8 @@ For this week's lab (and also the following week), you will work in groups of 3.
 1. Smart Phone (Laptop or Tablets also work) -- The main required feature is that the phone needs to connect to WiFi and display a webpage.
 2. To work in a group of 3 (encouraged) or 4 people (if necessary).
 
+\*\***List the names and NetID for your partners here.**\*\*
+
 ### Deliverables for this lab are: 
 1. 5 Storyboards
 3. Any reflections you have on the process
