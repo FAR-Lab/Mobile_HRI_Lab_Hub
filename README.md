@@ -1,4 +1,4 @@
-# Natalie's-Lab-Hub
+# [Your name here]'s-Lab-Hub
 for [Mobile_HRI_Design](https://github.com/FAR-Lab/Mobile_HRI_Design)
 
 Please place links here to the README.md's for each of your labs here:
@@ -23,4 +23,3 @@ Lab 8. Chatty Robots
 
 Final Project
 
-modifying test  
