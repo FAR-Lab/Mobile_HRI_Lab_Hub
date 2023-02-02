@@ -90,7 +90,7 @@ Select 3 of the 5 storyboards to act out. Try physically acting out the 3 intera
 
 We are not quite finished with the lab last week.
 
-As I mentioned, ROS are managed through packages. We have this crazy file structure that looks like a python package but haven't really make a package.
+As I mention, ROS is managed through packages. We have this crazy file structure that looks like a python package but haven't really make a package.
 In the last bit of today's lab, let's actually build our package.
 
 Go back to the construct website and log in to your previous Rosject.
