@@ -19,7 +19,8 @@ For this week's lab (and also the following week), you will work in groups of 3.
 ### Update your personal lab repo
 1.  Log in to your github, go to `YourGithubUsername/Mobile_HRI_Lab_Hub/`. 
 2.  Click "Sync fork" -> "Update branch"
-<img src="https://user-images.githubusercontent.com/20778137/216361417-48d0e8b6-2d21-46e0-869c-b8aa801dfed4.png" width="600">
+<img src="https://user-images.githubusercontent.com/20778137/216387426-475bd046-a583-4ff8-980b-cbae843b0dc5.png" width="600">
+
 3. Now your Lab Hub should be updated with the latest lab.
 
 
