@@ -1,5 +1,7 @@
 # Mobile Robot Bootcamp (Jan 26)
 
+modifying for test
+
 For the first lab, we will just focus on getting everyone set up with [ROS 2](https://docs.ros.org/en/humble/index.html) and ready to program and build robots.
 
 In lab on Thursday, we will walk you through the basic concepts for ROS and play with some basic functionalities of it.
