@@ -2,7 +2,7 @@
 
 In this lab, you will modify a robotic creature (ConeBot) that is originally designed by [Dr. Rei Lee](https://infosci.cornell.edu/~reilee/), a friend of our lab. The [ConeBot](https://infosci.cornell.edu/~reilee/ConeBot/) is a shy robot that hides under a small traffic cone. It is adventuring the world by itself but hopes people don't notice it at all.
 
-Today, you will work with a close relative of ConeBot, CloneBot. Though closely related, CloneBot's personality (robotality?) is quite the opposite of ConeBot. It is outgoing and love to hangout with people. You will work with CloneBot and design its legendary adventure. 
+Today, you will work with a close relative of ConeBot, CloneBot. Though closely related, CloneBot's personality (robotality?) is quite the opposite of ConeBot. It is outgoing and loves to hangout with people. You will work with CloneBot and design its legendary adventure. 
 
 
 
