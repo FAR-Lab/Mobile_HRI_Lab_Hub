@@ -35,9 +35,9 @@ C) [Act out the interaction](#part-c-act-out-the-interaction)
 
 ### Deliverables for this lab are: 
 1. 5 Storyboards
-3. Any reflections you have on the process
-4. Video sketch of 3 prototyped interactions (selected from the 5 storyboards)
-5. Submit the items above in the Lab1 folder of your class [Github page], either as links or uploaded files. **Each group member should have the updated lab page linked to their own Lab Hub.** Better yet, you could replicate the data in your own repo so that you don't lose anything if your partner modifies or deletes their files later.
+2. Any reflections you have on the process
+3. Video sketch of 3 prototyped interactions (selected from the 5 storyboards)
+4. Submit the items above in the Lab1 folder of your class [Github page], either as links or uploaded files. **Each group member should have the updated lab page linked to their own Lab Hub.** Better yet, you could replicate the data in your own repo so that you don't lose anything if your partner modifies or deletes their files later.
 
 ### The Report
 Just as you copied your Lab 0/Readme.md, create a new file "NetID_Readme.md" under your Lab 1 folder. Leave the original "Readme.md" intact.
@@ -48,11 +48,13 @@ Each group member must submit their own submission, even if most of the material
 Labs are due on Tuesdays before class. 
 
 ## Part A. Build Your Clonebot
+Form your 3-4 person team.
+
 Follow the instructions [here](https://cornell.box.com/s/i0ykqbfz3y1fj195jax0s28v1n1vsx4o) to build your robot!
 The instructions are arranged in stages. At the beginning of each stage, each group must select one (and only one) representitive to pick up parts from us. 
 
-After you finish your robot, plug in power (plug in the USB to the battery pack). Following the instructions below to connect to your robot.
-1. Connect to WiFi "MobileHRI-x", where x is the number assigned to the ESP-32. (ESP-32 should flesh once.)
+After you finish your robot, plug in power from the USB battery pack. Follow the instructions below to connect to your robot.
+1. Connect to WiFi "MobileHRI-x", where x is the number assigned to the ESP-32. (ESP-32 should flash once.)
 2. Open a brower, in the address line, type in 192.168.4.1
 3. You should be see a control interface. Try out different buttons and see what they do.
 
@@ -79,7 +81,7 @@ Storyboards are a tool for visually exploring a users interaction with a device.
 
 ## Part C. Act out the Interaction
 
-Select 3 of the 5 storyboards to act out. Try physically acting out the 3 interactions you planned with your teammates. (Do not plug in the CloneBot just yet.) Record these video clips and submit them (Unlisted youtube links are fine).
+Select 3 of the 5 storyboards to act out. Try physically enacting the 3 interactions you planned with your teammates. (Do not plug in the CloneBot just yet.) Record these video clips, and submit them (Unlisted Youtube links are fine).
 
 \*\***Are there things that seemed better on paper than acted out?**\*\*
 
@@ -88,9 +90,9 @@ Select 3 of the 5 storyboards to act out. Try physically acting out the 3 intera
 
 ## Your Weekly Dose of ROS
 
-We are not quite finished with the lab last week.
+We are not quite finished with the lab from last week.
 
-As I mention, ROS is managed through packages. We have this crazy file structure that looks like a python package but haven't really make a package.
+As I mention, ROS is managed through packages. We have this crazy file structure that looks like a python package but haven't really made a package.
 In the last bit of today's lab, let's actually build our package.
 
 Go back to the construct website and log in to your previous Rosject.
@@ -130,7 +132,7 @@ setup(
 
 ```
 
-By adding entry points that linked to the main functions in our hri_publisher and hri_subscriber files, we basically create shortcuts for ROS to call our script in terminal. 
+By adding entry points that linked to the main functions in our hri_publisher and hri_subscriber files, we basically create shortcuts for ROS to call our script in Terminal. 
 
 Now, let's build our package. Open a terminal:
 ``` bash
@@ -141,7 +143,7 @@ source install/setup.bash
 
 Remember that we need to source ROS every time? In order to use your customized ROS packages, you must source them individually as well! To do so, source the setup.bash file within `workspace/install`.
 
-Now, you can call your scripts through ROS like the following.
+Now, you can call your scripts through ROS the following way:
 
 ```bash
 # In terminal 1
@@ -157,6 +159,6 @@ source install/setup.bash
 ros2 run my_package listener
 ```
 
-You may notice that the listener do not receive messages published before it is created. As Dr. Ju mentioned in class, the messaging system established through publishers and subscribers are not reliable. They are in fact asynchronous. Publishers and subscribers are unaware of each others' existence. 
+You may notice that the listener does not receive messages published before it is created. As Wendy mentioned in class, the messaging system established through publishers and subscribers are not reliable. They are in fact asynchronous. Publishers are unaware of the subscribers existence. 
 
-To have a reliable interaction, you will need a new type of mechanism called service and client. We will talk more about this later. 
+To have a more reliable interaction, you will need a new type of mechanism called service and client. We will talk more about this later. 
