@@ -7,13 +7,21 @@ Today, you will work with a close relative of ConeBot, CloneBot. Though closely 
 
 
 ## Prep
-For this week's lab (and also the following week), you will work in groups of 3. Due to class size, one group might end up with two members, that's fine!
+For this week's lab (and also the following week), you will work in groups of 3.
 
 ### For this lab, you will need:
 1. Smart Phone (Laptop or Tablets also work) -- The main required feature is that the phone needs to connect to WiFi and display a webpage.
 2. To work in a group of 3 (encouraged) or 4 people (if necessary).
 
 \*\***List the names and NetID for your partners here.**\*\*
+
+### Save a copy of your lab 0
+Before you make a pull request and update your repository [guide detailed [here](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/blob/2022Fall/readings/Submitting%20Labs.md)]. Make a copy of your Lab0/Readme.md.
+1.  Log in to your github, go to `YourGithubUsername/Mobile_HRI_Lab_Hub/Lab0/` folder. 
+2.  Copy everything you have in your original Readme.md file.
+3.  Click "Add file" (top tight corner) -> "Create new File" -> name the file "NetID_Readme.md"
+4.  Now, go ahead and make a pull request to get the lastest lab from our course repository.
+* This is to prevent your code being overwritten by our empty Readme.md.
 
 ### Deliverables for this lab are: 
 1. 5 Storyboards
@@ -22,7 +30,10 @@ For this week's lab (and also the following week), you will work in groups of 3.
 5. Submit the items above in the lab1 folder of your class [Github page], either as links or uploaded files. Each group member should post their own copy of the work to their own Lab Hub, even if some of the work is the same from each person in the group.
 
 ### The Report
-This README.md page in your own repository should be edited to include the work you have done (the deliverables mentioned above). Following the format below, you can delete everything but the headers and the sections between the **stars**. Write the answers to the questions under the starred sentences. Include any material that explains what you did in this lab hub folder, and link it in your README.md for the lab.
+Just like how you copied your lab 0/Readme.md, create a new file "NetID_Readme.md" under your lab 1 folder. Leave the original "Readme.md" intact.
+This NetID_Readme.md page in your own repository should be edited to include the work you have done (the deliverables mentioned above). Following the format below, you can delete everything but the headers and the sections between the **stars**. Write the answers to the questions under the starred sentences. Include any material that explains what you did in this lab hub folder, and link it in your README.md for the lab.
+
+Each group member must submit their own submission, even if most of the material is identical to their group members. Upload the link to your "NetID_Readme.md" to canvas. 
 
 ## Lab Overview
 For this assignment, you are going to:
