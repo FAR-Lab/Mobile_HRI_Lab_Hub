@@ -54,7 +54,7 @@ Follow the instructions [here](https://cornell.box.com/s/i0ykqbfz3y1fj195jax0s28
 The instructions are arranged in stages. At the beginning of each stage, each group must select one (and only one) representitive to pick up parts from us. 
 
 After you finish your robot, plug in power from the USB battery pack. Follow the instructions below to connect to your robot.
-1. Connect to WiFi "MobileHRI-x", where x is the number assigned to the ESP-32. (ESP-32 should flash once.)
+1. Connect to WiFi "MobileHRI-x", where x is the number assigned to the ESP-32. (ESP-32 should flash once.) The password is "12345678"
 2. Open a brower, in the address line, type in 192.168.4.1
 3. You should be see a control interface. Try out different buttons and see what they do.
 
