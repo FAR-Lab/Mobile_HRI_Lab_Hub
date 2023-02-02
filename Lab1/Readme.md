@@ -84,3 +84,79 @@ Select 3 of the 5 storyboards to act out. Try physically acting out the 3 intera
 \*\***Are there things that seemed better on paper than acted out?**\*\*
 
 \*\***Are there new ideas that occur to you or your collaborators that come up from the acting?**\*\*
+
+
+## Your Weekly Dose of ROS
+
+We are not quite finished with the lab last week.
+
+As I mentioned, ROS are managed through packages. We have this crazy file structure that looks like a python package but haven't really make a package.
+In the last bit of today's lab, let's actually build our package.
+
+Go back to the construct website and log in to your previous Rosject.
+
+In your code editor, open the file `mobilehri_ws/src/my_package/setup.py`.
+
+Replace what's inside with the following code snippet.
+
+```python
+from setuptools import setup
+
+package_name = 'my_package'
+
+setup(
+    name=package_name,
+    version='0.0.0',
+    packages=[package_name],
+    data_files=[
+        ('share/ament_index/resource_index/packages',
+            ['resource/' + package_name]),
+        ('share/' + package_name, ['package.xml']),
+    ],
+    install_requires=['setuptools'],
+    zip_safe=True,
+    maintainer='user',
+    maintainer_email='user@todo.todo',
+    description='TODO: Package description',
+    license='TODO: License declaration',
+    tests_require=['pytest'],
+    entry_points={
+        'console_scripts': [
+            'talker = my_package.hri_publisher:main',       # NEW!
+            'listener = my_package.hri_subscriber:main',    # NEW!
+        ],
+    },
+)
+
+```
+
+By adding entry points that linked to the main functions in our hri_publisher and hri_subscriber files, we basically create shortcuts for ROS to call our script in terminal. 
+
+Now, let's build our package. Open a terminal:
+``` bash
+cd ~/mobilehri_ws/
+colcon build          # ignore the warning/err about setup.py being deprecated.
+source install/setup.bash
+```
+
+Remember that we need to source ROS every time? In order to use your customized ROS packages, you must source them individually as well! To do so, source the setup.bash file within `workspace/install`.
+
+Now, you can call your scripts through ROS like the following.
+
+```bash
+# In terminal 1
+cd ~/mobilehri_ws/
+source install/setup.bash
+ros2 run my_package talker
+```
+
+```bash
+# In terminal 2
+cd ~/mobilehri_ws/
+source install/setup.bash
+ros2 run my_package listener
+```
+
+You may notice that the listener do not receive messages published before it is created. As Dr. Ju mentioned in class, the messaging system established through publishers and subscribers are not reliable. They are in fact asynchronous. Publishers and subscribers are unaware of each others' existence. 
+
+To have a reliable interaction, you will need a new type of mechanism called service and client. We will talk more about this later. 
