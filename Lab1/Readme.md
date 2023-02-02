@@ -1,4 +1,5 @@
 # Interaction First
+\*\***List the names and NetID for your partners here.**\*\*
 
 In this lab, you will modify a robotic creature (ConeBot) that is originally designed by [Dr. Rei Lee](https://infosci.cornell.edu/~reilee/), a friend of our lab. The [ConeBot](https://infosci.cornell.edu/~reilee/ConeBot/) is a shy robot that hides under a small traffic cone. It is adventuring the world by itself but hopes people don't notice it at all.
 
@@ -13,7 +14,7 @@ For this week's lab (and also the following week), you will work in groups of 3.
 1. Smart Phone (Laptop or Tablets also work) -- The main required feature is that the phone needs to connect to WiFi and display a webpage.
 2. To work in a group of 3 (encouraged) or 4 people (if necessary).
 
-\*\***List the names and NetID for your partners here.**\*\*
+\*\***^^^ List the names and NetID for your partners above/ ^^^**\*\*
 
 ### Save a copy of your lab 0
 Before you make a pull request and update your repository [guide detailed [here](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/blob/2022Fall/readings/Submitting%20Labs.md)]. Make a copy of your Lab0/Readme.md.
