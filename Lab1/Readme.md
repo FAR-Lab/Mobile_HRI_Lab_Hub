@@ -24,18 +24,6 @@ Before you begin, make a pull request and update your repository [guide detailed
 4.  Now, go ahead and make a pull request to get the lastest lab from our course repository.
 * This is to prevent your code being overwritten by our empty Readme.md.
 
-### Deliverables for this lab are: 
-1. 5 Storyboards
-3. Any reflections you have on the process
-4. Video sketch of 3 prototyped interactions (selected from the 5 storyboards)
-5. Submit the items above in the lab1 folder of your class [Github page], either as links or uploaded files. Each group member should post their own copy of the work to their own Lab Hub, even if some of the work is the same from each person in the group.
-
-### The Report
-Just like how you copied your lab 0/Readme.md, create a new file "NetID_Readme.md" under your lab 1 folder. Leave the original "Readme.md" intact.
-This NetID_Readme.md page in your own repository should be edited to include the work you have done (the deliverables mentioned above). Following the format below, you can delete everything but the headers and the sections between the **stars**. Write the answers to the questions under the starred sentences. Include any material that explains what you did in this lab hub folder, and link it in your README.md for the lab.
-
-Each group member must submit their own submission, even if most of the material is identical to their group members. Upload the link to your "NetID_Readme.md" to canvas. 
-
 ## Lab Overview
 For this assignment, you are going to:
 
@@ -45,8 +33,19 @@ B) [Plan](#part-b-plan)
 
 C) [Act out the interaction](#part-c-act-out-the-interaction) 
 
+### Deliverables for this lab are: 
+1. 5 Storyboards
+3. Any reflections you have on the process
+4. Video sketch of 3 prototyped interactions (selected from the 5 storyboards)
+5. Submit the items above in the Lab1 folder of your class [Github page], either as links or uploaded files. **Each group member should have the updated lab page linked to their own Lab Hub.** Better yet, you could replicate the data in your own repo so that you don't lose anything if your partner modifies or deletes their files later.
 
-Labs are due on Tuesdays before class. Make sure this page is linked to on your main class hub page.
+### The Report
+Just as you copied your Lab 0/Readme.md, create a new file "NetID_Readme.md" under your Lab 1 folder. Leave the original "Readme.md" intact.
+This NetID_Readme.md page in your own repository should be edited to include the work you have done (the deliverables mentioned above). Following the format below, you can delete everything but the headers and the sections between the **stars**. Write the answers to the questions under the starred sentences. Include any material that explains what you did in this lab hub folder, and link it in your README.md for the lab.
+
+Each group member must submit their own submission, even if most of the material is identical to their group members. Upload the link to your "NetID_Readme.md" to Canvas. 
+
+Labs are due on Tuesdays before class. 
 
 ## Part A. Build Your Clonebot
 Follow the instructions [here](https://cornell.box.com/s/i0ykqbfz3y1fj195jax0s28v1n1vsx4o) to build your robot!
