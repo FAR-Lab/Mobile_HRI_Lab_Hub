@@ -16,13 +16,11 @@ For this week's lab (and also the following week), you will work in groups of 3.
 
 \*\***^^^ List the names and NetID for your partners above. ^^^**\*\*
 
-### Save a copy of your lab 0
-Before you begin, make a pull request and update your repository [guide detailed [here](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/blob/2022Fall/readings/Submitting%20Labs.md)]. Make a copy of your Lab0/Readme.md.
-1.  Log in to your github, go to `YourGithubUsername/Mobile_HRI_Lab_Hub/Lab0/` folder. 
-2.  Copy everything you have in your original Readme.md file.
-3.  Click "Add file" (top tight corner) -> "Create new File" -> name the file "NetID_Readme.md"
-4.  Now, go ahead and make a pull request to get the lastest lab from our course repository.
-* This is to prevent your code being overwritten by our empty Readme.md.
+### Update your personal lab repo
+1.  Log in to your github, go to `YourGithubUsername/Mobile_HRI_Lab_Hub/`. 
+2.  "Sync fork" -> "Update branch"
+<img src="https://user-images.githubusercontent.com/20778137/216361417-48d0e8b6-2d21-46e0-869c-b8aa801dfed4.png" width="600">
+
 
 ## Lab Overview
 For this assignment, you are going to:
