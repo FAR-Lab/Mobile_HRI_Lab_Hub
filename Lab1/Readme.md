@@ -72,6 +72,37 @@ _Goals:_ What are the goals of each player? (e.g., picking up a pen, opening the
 Leverage the possible motions of Clonebot and the extra degree of freedom provided by the motor on the top.
 
 \*\***Describe your setting, players, activity and goals here.**\*\*
+Use case 1
+
+Setting: At home
+Player: Pet and its owner who is away from home
+Activity: The owner controls the robot remotely to play with his/her pet. The owner can also see visuals through the camera.
+Goal: The owner's goal is to 1) keep their pet company while away and 2) check on their pet in case they miss them. The pet's goal is to have a good time with the robot.
+Use case 2
+
+Setting: In schools
+Player: Visitors, new students, and delivery persons who are not familiar with the campus
+Activity: The player says the destination they want to go, and the robot guides him/her to it.
+Goal: The player's goal is to get to the right place on time.
+Use case 3
+
+Setting: In classroom at school, during exams
+Player: Students and invigilator
+Activity: The robot patrols the classroom while an invigilator could see the visuals remotely. The robot has automatic detection for behaviors like talking to each other, checking the phone, etc. and alerts the invigilator. The invigilator can sit at the front and keep an eye on the video stream while doing his/her own things.
+Goal: The invigilator's goal is to surveil the students to make sure there's no bad behaviors. The student's goal is to take the exam without disturbance.
+Use case 4
+
+Setting: Places that is not possible or safe human to be at: caves, outer space, ocean, etc.
+Player: Exploers and scientists
+Activity: The player controls the robot to enter the place of interest in order to take a look of the place.
+Goal: To get a better understanding of the space of interest through the visuals.
+Use case 5
+
+Setting: At home
+Player: Homeowners who do not want to or cannot move
+Activity: The players control the robot to answer doors, communicate with delivery people and pick up items to them.
+Goal: Homeowners' goal is to get items without having to move their body and accomplish simple communication tasks.
+
 
 Storyboards are a tool for visually exploring a users interaction with a device. They are a fast and cheap method to understand user flow, and iterate on a design before attempting to build on it. Take some time to read through this explanation of [storyboarding in UX design](https://www.smashingmagazine.com/2017/10/storyboarding-ux-design/). Sketch five storyboards of the interactions you are planning. **It does not need to be perfect**, but must get across the behavior of the CloneBot and the other characters in the scene. 
 
