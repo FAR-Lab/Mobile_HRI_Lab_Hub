@@ -31,9 +31,9 @@ For this assignment, you are going to:
 
 A) [Site the interaction](#part-a-site-the-interaction)
 
-B) [Costume the device](#part-b-costume-the-robot)
+B) [Costume the robot](#part-b-costume-the-robot)
 
-B) [Wizard the device](#part-c-wizard-the-device) 
+B) [Wizard the robot](#part-c-wizard-the-robot) 
 
 C) [Video record the interaction](#part-d-record)
 
@@ -53,23 +53,23 @@ What activities are going on in that space? What activity is the robot going to 
 
 \*\***What issues or opportunties arise from the site and activities?**\*\*
 
-## Part B. Costume the device
+## Part B. Costume the robot
 
 Only now should you start worrying about what the device should look like. Develop three costumes so that CloneBot can fit into it's setting.
 
 Think about the setting of the device: is the environment a place where the device could overheat? Is water a danger? 
 
-Pick one of the custumes and make it with paper or cardboard!
+Pick one of the custumes and make it with paper or cardboard or any other material!
 
-\*\***Include sketches of what your devices might look like here.**\*\*
+\*\***Include sketches of what your robot might look like here.**\*\*
 
 \*\***Include photos of your custumed robot here.**\*\*
 
-\*\***What concerns or opportunitities are influencing the way you've designed the device to look?**\*\*
+\*\***What concerns or opportunitities are influencing the way you've designed the robot to look?**\*\*
 
 
-## Part C. Wizard the device
-Take a little time to set up the wizarding set-up that allows for someone to remotely control the device while someone acts with it. Hint: You can use Zoom to record videos, and you can pin someone’s video feed if that is the scene which you want to record. 
+## Part C. Wizard the Robot
+Take a little time to set up the wizarding set-up that allows for someone to remotely control the robot while someone interacts with it. Hint: You can use Zoom to record videos, and you can pin someone’s video feed if that is the scene which you want to record. 
 
 \*\***Include your first attempts at recording the set-up video here.**\*\*
 
@@ -92,7 +92,7 @@ Labs are due on Tuesdays before class. Make sure this page is linked to on your 
 ### Again, deliverables for this lab are: 
 
 0. Fill in the questions along the way! 
-1. 3 photos of costumed devices
+1. 3 photos of costumed robots
 2. Reflections on the process
 3. Video sketch of 3 prototyped interactions with costumed devices
 4. Submit the items above in the lab2 folder of your class [Github page], either as links or uploaded files. Each group member should post their own copy of the work to their own Lab Hub, even if some of the work is the same from each person in the group.
