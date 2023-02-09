@@ -29,17 +29,24 @@ This README.md page in your own repository should be edited to include the work 
 ## Lab Overview
 For this assignment, you are going to:
 
-A) [Site the interaction](#part-a-site-the-interaction)
+A)[Provide feedback to your peers](#part-a-provide-feedback)
 
-B) [Costume the robot](#part-b-costume-the-robot)
+B) [Site the interaction](#part-a-site-the-interaction)
 
-C) [Wizard the robot](#part-c-wizard-the-robot) 
+C) [Costume the robot](#part-b-costume-the-robot)
 
-D) [Video record the interaction](#part-d-record)
+D) [Wizard the robot](#part-c-wizard-the-robot) 
+
+E) [Video record the interaction](#part-d-record)
 
 Labs are due on Tuesdays before class. Make sure this page is linked to on your main class hub page.
 
-## Part A. Site the interaction
+## Part A. Provide Feedback
+You and your teammates will be assigned lab 1 submissions from one other group. Go to their github pages, view their videos, and provide them with reactions, suggestions & feedback: explain to them what you saw happening in their video. Guess the scene and the goals of the character. Ask them about anything that wasn’t clear.
+
+**Summarize feedback your feedback here.**
+
+## Part B. Site the interaction
 
 Think about where the interaction you are prototyping is going to occur-- on a desk? on a floor? indoors? outdoors?
 
@@ -53,7 +60,7 @@ What activities are going on in that space? What activity is the robot going to 
 
 \*\***What issues or opportunties arise from the site and activities?**\*\*
 
-## Part B. Costume the robot
+## Part C. Costume the robot
 
 Only now should you start worrying about what the device should look like. Develop three costumes so that CloneBot can fit into it's setting.
 
@@ -68,7 +75,7 @@ Pick one of the custumes and make it with paper or cardboard or any other materi
 \*\***What concerns or opportunitities are influencing the way you've designed the robot to look?**\*\*
 
 
-## Part C. Wizard the Robot
+## Part D. Wizard the Robot
 Take a little time to set up the wizarding set-up that allows for someone to remotely control the robot while someone interacts with it. Hint: You can use Zoom to record videos, and you can pin someone’s video feed if that is the scene which you want to record. 
 
 \*\***Include your first attempts at recording the set-up video here.**\*\*
@@ -77,7 +84,7 @@ Now, hange the goal within the same setting, and update the interaction with the
 
 \*\***Show the follow-up work here.**\*\*
 
-## Part D. Record
+## Part E. Record
 
 \*\***Take videos of your prototyped interaction.**\*\*
 
