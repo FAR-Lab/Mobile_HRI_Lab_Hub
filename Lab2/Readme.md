@@ -31,13 +31,13 @@ For this assignment, you are going to:
 
 A) [Provide feedback to your peers](#part-a-provide-feedback)
 
-B) [Site the interaction](#part-a-site-the-interaction)
+B) [Site the interaction](#part-b-site-the-interaction)
 
-C) [Costume the robot](#part-b-costume-the-robot)
+C) [Costume the robot](#part-c-costume-the-robot)
 
-D) [Wizard the robot](#part-c-wizard-the-robot) 
+D) [Wizard the robot](#part-d-wizard-the-robot) 
 
-E) [Video record the interaction](#part-d-record)
+E) [Video record the interaction](#part-e-record)
 
 Labs are due on Tuesdays before class. Make sure this page is linked to on your main class hub page.
 
