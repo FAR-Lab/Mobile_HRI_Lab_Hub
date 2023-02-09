@@ -29,22 +29,15 @@ This README.md page in your own repository should be edited to include the work 
 ## Lab Overview
 For this assignment, you are going to:
 
-A) Provide feedback to your peers(#part-a-provide-feedback)
+A) [Costume the device](#part-a-costume-the-device)
 
-B) [Costume the device](#part-b-costume-the-device)
+B) [Wizard the device](#part-b-wizard-the-device) 
 
-C) [Wizard the device](#part-c-wizard-the-device) 
-
-D) [Video record the interaction](#part-d-record)
+C) [Video record the interaction](#part-c-record)
 
 Labs are due on Tuesdays before class. Make sure this page is linked to on your main class hub page.
 
-## Part A. Provide Feedback
-You and your teammates will be assigned lab 1 submissions from one other group. Go to their github pages, view their videos, and provide them with reactions, suggestions & feedback: explain to them what you saw happening in their video. Guess the scene and the goals of the character. Ask them about anything that wasn’t clear. 
-
-\*\***Summarize feedback your feedback here.**\*\*
-
-## Part B. Costume the device
+## Part A. Costume the device
 
 Only now should you start worrying about what the device should look like. Develop three costumes so that CloneBot can fit into it's setting.
 
@@ -59,7 +52,7 @@ Pick one of the custumes and make it with paper or cardboard!
 \*\***What concerns or opportunitities are influencing the way you've designed the device to look?**\*\*
 
 
-## Part C. Wizard the device
+## Part B. Wizard the device
 Take a little time to set up the wizarding set-up that allows for someone to remotely control the device while someone acts with it. Hint: You can use Zoom to record videos, and you can pin someone’s video feed if that is the scene which you want to record. 
 
 \*\***Include your first attempts at recording the set-up video here.**\*\*
@@ -68,7 +61,7 @@ Now, hange the goal within the same setting, and update the interaction with the
 
 \*\***Show the follow-up work here.**\*\*
 
-## Part D. Record
+## Part C. Record
 
 \*\***Take videos of your prototyped interaction.**\*\*
 
