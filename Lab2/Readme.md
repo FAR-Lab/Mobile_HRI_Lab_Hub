@@ -1,7 +1,8 @@
 # Then Prototype the Robot
+**List the names and NetID for your partners here.**
 This week's lab is a continuation of the previous week. We explore the role of both *siting*--the location and activity--in interaction, as well as the *form and appearance* of the robot in the interaction.
 
-**List the names and NetID for your partners here.**
+
 ## Prep
 
 ### For this lab, you will need:
