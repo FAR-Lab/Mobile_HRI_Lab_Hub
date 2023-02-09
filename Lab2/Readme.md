@@ -33,9 +33,9 @@ A) [Site the interaction](#part-a-site-the-interaction)
 
 B) [Costume the robot](#part-b-costume-the-robot)
 
-B) [Wizard the robot](#part-c-wizard-the-robot) 
+C) [Wizard the robot](#part-c-wizard-the-robot) 
 
-C) [Video record the interaction](#part-d-record)
+D) [Video record the interaction](#part-d-record)
 
 Labs are due on Tuesdays before class. Make sure this page is linked to on your main class hub page.
 
