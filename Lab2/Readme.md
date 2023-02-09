@@ -1,5 +1,5 @@
 # Then Prototype the Robot
-This week's lab is a continuation of the previous week. 
+This week's lab is a continuation of the previous week. We explore the role of both *siting*--the location and activity--in interaction, as well as the *form and appearance* of the robot in the interaction.
 
 
 ## Prep
@@ -29,15 +29,31 @@ This README.md page in your own repository should be edited to include the work 
 ## Lab Overview
 For this assignment, you are going to:
 
-A) [Costume the device](#part-a-costume-the-device)
+A) [Site the interaction](#part-a-site-the-interaction)
 
-B) [Wizard the device](#part-b-wizard-the-device) 
+B) [Costume the device](#part-b-costume-the-robot)
 
-C) [Video record the interaction](#part-c-record)
+B) [Wizard the device](#part-c-wizard-the-device) 
+
+C) [Video record the interaction](#part-d-record)
 
 Labs are due on Tuesdays before class. Make sure this page is linked to on your main class hub page.
 
-## Part A. Costume the device
+## Part A. Site the interaction
+
+Think about where the interaction you are prototyping is going to occur-- on a desk? on a floor? indoors? outdoors?
+
+What other people and objects are in that space?
+
+What activities are going on in that space? What activity is the robot going to be involved in?
+
+\*\***Sketch and/or take photos of the site(s) you are considering.**\*\*
+
+\*\***Document the activities being considered.**\*\*
+
+\*\***What issues or opportunties arise from the site and activities?**\*\*
+
+## Part B. Costume the device
 
 Only now should you start worrying about what the device should look like. Develop three costumes so that CloneBot can fit into it's setting.
 
@@ -52,7 +68,7 @@ Pick one of the custumes and make it with paper or cardboard!
 \*\***What concerns or opportunitities are influencing the way you've designed the device to look?**\*\*
 
 
-## Part B. Wizard the device
+## Part C. Wizard the device
 Take a little time to set up the wizarding set-up that allows for someone to remotely control the device while someone acts with it. Hint: You can use Zoom to record videos, and you can pin someone’s video feed if that is the scene which you want to record. 
 
 \*\***Include your first attempts at recording the set-up video here.**\*\*
@@ -61,7 +77,7 @@ Now, hange the goal within the same setting, and update the interaction with the
 
 \*\***Show the follow-up work here.**\*\*
 
-## Part C. Record
+## Part D. Record
 
 \*\***Take videos of your prototyped interaction.**\*\*
 
