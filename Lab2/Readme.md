@@ -29,7 +29,7 @@ This README.md page in your own repository should be edited to include the work 
 ## Lab Overview
 For this assignment, you are going to:
 
-A)[Provide feedback to your peers](#part-a-provide-feedback)
+A) [Provide feedback to your peers](#part-a-provide-feedback)
 
 B) [Site the interaction](#part-a-site-the-interaction)
 
