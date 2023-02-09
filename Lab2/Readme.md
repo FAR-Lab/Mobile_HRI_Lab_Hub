@@ -101,5 +101,5 @@ Labs are due on Tuesdays before class. Make sure this page is linked to on your 
 0. Fill in the questions along the way! 
 1. photos of costumed robots
 2. Reflections on the process
-3. Video sketch of 3 prototyped interactions with costumed devices
+3. Video sketch of 1 prototyped interactions with the costumed device
 4. Submit the items above in the lab2 folder of your class [Github page], either as links or uploaded files. Each group member should post their own copy of the work to their own Lab Hub, even if some of the work is the same from each person in the group.
