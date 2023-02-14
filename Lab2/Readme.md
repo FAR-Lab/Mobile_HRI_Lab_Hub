@@ -44,6 +44,17 @@ You and your teammates will be assigned lab 1 submissions from one other group. 
 
 \*\***Summarize feedback your feedback here.**\*\*
 
+Critique:
+https://github.com/jamie-cao/Mobile_HRI_Lab_Hub/blob/main/Lab1/jc2974_Readme.md
+
+1.I like their special effect of the red fire in the video! I saw a fireman who needs to find people trapped in a building on fire (goal) and he asked the robot. The robot guides the fireman successfully find a dying people. Suggestion & Question: The robot led the fireman to people in building on fire, but I wonder how robot actually found the people, and does the robot actually finds the people faster than the fireman? Do the robot find people first and then signal the fireman to come, or does robot actually lead the way?
+
+2. I guessed the goal of the character is to write songs with more creative beats/resources. The person asked robot to help him write a good song, but magically the robot wrote a song. Not sure how the robot achieved that? Also, if the robot wrote the song, would the person still own the song?
+
+3. I saw a robot carrying an iphone around showcasing it to people. The person can ask the robot what iphone is and robot answers. It seems like the robot wants to advertise the iphone and sell it? It would be more clear if the robot actually has more interactions with the person in video!
+
+
+
 ## Part B. Costume the device
 
 Only now should you start worrying about what the device should look like. Develop three costumes so that CloneBot can fit into it's setting.
@@ -57,6 +68,7 @@ Pick one of the custumes and make it with paper or cardboard!
 \*\***Include photos of your custumed robot here.**\*\*
 
 \*\***What concerns or opportunitities are influencing the way you've designed the device to look?**\*\*
+
 
 
 ## Part C. Wizard the device
