@@ -24,7 +24,7 @@ Please bring all items I have shipped to you to the robotics lab in Upson. You w
 
 ### Deliverables for this lab are: 
 0. a video showing that you can control the hoverboard through python
-1. three sketches of potential robots you can build with this platform. Be more realistic and think of these sketches as a potential candidate for your final project. (Look around, what can you automate?)
+1. three sketches of potential robots you can build with this platform. Be more realistic and think of these sketches as potential candidates for your final project. (Look around, what can you automate?)
 
 ### The Report 
 This README.md page in your own repository should be edited to include the work you have done (the deliverables mentioned above).
