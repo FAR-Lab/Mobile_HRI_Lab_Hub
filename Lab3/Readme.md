@@ -1,9 +1,3 @@
-<style>
-    .rotated {
-        transform: rotate(90deg);
-    }
-</style>
-
 # Make the Robot Move
 **List the names and NetID for your partners here.**
 
@@ -63,9 +57,9 @@ instructed** [here](https://it.cornell.edu/wifi-wired/register-device-doesnt-hav
 
 Reboot the RPi (unplug the power cable and replug it in). Your device should now conencted to RedRover and display ip address.
 
-<img src="Images/RPi_side.jpeg" width="150" style="transform: rotate(-90deg)"/>
+<img src="Images/RPi_side.jpeg" width="500"/>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-<img src="Images/RPi.jpeg" width="150" style="transform: rotate(-90deg)"/>
+<img src="Images/RPi.jpeg" width="500"/>
 
 ## Part B. Hardware setup
 
@@ -74,11 +68,11 @@ Reboot the RPi (unplug the power cable and replug it in). Your device should now
 > - cut the original connectors from the hall sensors (take a note of the wire ordering). Then, solder the JST connector to the hall effect sensors as shown below (watch the tutorial in the Prep section on how to solder two wire together.) **Pay attention to the color coding of the wires, I am sorry that they do not match exactly.**
 > - Tape the dangling white wire with electrical tape. (In the picture, my tape is red.) This is important since the white wire will short your motor if left unattended.
 
-> <img src="Images/charger.jpeg" width="100"/>
+> <img src="Images/charger.jpeg" width="300"/>
 > &nbsp; &nbsp; &nbsp; 
-> <img src="Images/wheel_solder.jpeg" width="100"/>
+> <img src="Images/wheel_solder.jpeg" width="300"/>
 > &nbsp; &nbsp; &nbsp; 
-> <img src="Images/wheel_solder1.jpeg" width="100"/>
+> <img src="Images/wheel_solder1.jpeg" width="300"/>
 
 1. Take a hex key, and remove one of the wheels from your hoverboard. Clamp it down on the desk. The wheel should be free to spin, but the axle must be firmly clamped to the desk. 
 
@@ -88,14 +82,14 @@ Reboot the RPi (unplug the power cable and replug it in). Your device should now
 
 4. Connect the ODrive with your RPi with the micro-USB cable provided in the ODrive box, and then plug the JST connector from your wheels to the filtering PCB. Now, you can also plug in the power.
 
-<img src="Images/disassemble_0.jpeg" width="100"/>
-<img src="Images/disassemble_1.jpeg" width="178"/>
+<img src="Images/disassemble_0.jpeg" width="300"/>
+<img src="Images/disassemble_1.jpeg" width="405"/>
 
-<img src="Images/odrive_0.jpeg" width="100"/>
-<img src="Images/odrive_1.jpeg" width="100"/>
-<img src="Images/odrive_2.jpeg" width="100"/>
+<img src="Images/odrive_0.jpeg" width="300"/>
+<img src="Images/odrive_1.jpeg" width="300"/>
+<img src="Images/odrive_2.jpeg" width="300"/>
 
-<img src="Images/full.jpeg" width="300" style="transform: rotate(-90deg)"/>
+<img src="Images/full.jpeg" width="900"/>
 
 ## Part C. Software setup
 Now, let's get your motors running. Be prepared, you will run into many problems during this process for sure. Let the TAs know when you run into a problem that cannot be resolved by repreated attemps or unplugging/replugging. 
@@ -186,7 +180,7 @@ Remember that you have two wheels?
 
 Repeat the procedure for the other wheel. As before, clamp the wheel firmly on the desk. This time, plug your filtering PCB to axis 1, and hook up your wheels accordingly.
 
-<img src="Images/other_wheel.jpeg" width="300" style="transform: rotate(-90deg)"/>
+<img src="Images/other_wheel.jpeg" width="300"/>
 
 Repeat the calibration process above, note that you should change all occurance of `axis0` to `axis1`! 
 
