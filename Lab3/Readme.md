@@ -58,7 +58,7 @@ instructed** [here](https://it.cornell.edu/wifi-wired/register-device-doesnt-hav
 Reboot the RPi (unplug the power cable and replug it in). Your device should now conencted to RedRover and display ip address.
 
 > <img src="Images/RPi_side.jpeg" width="400"/>
-> &nbsp; &nbsp; &nbsp; &nbsp;
+> &nbsp; &nbsp;
 > <img src="Images/RPi.jpeg" width="400"/>
 
 ## Part B. Hardware setup
