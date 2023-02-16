@@ -83,10 +83,13 @@ Reboot the RPi (unplug the power cable and replug it in). Your device should now
 4. Connect the ODrive with your RPi with the micro-USB cable provided in the ODrive box, and then plug the JST connector from your wheels to the filtering PCB. Now, you can also plug in the power.
 
 <img src="Images/disassemble_0.jpeg" width="300"/>
+> &nbsp; &nbsp; &nbsp; 
 <img src="Images/disassemble_1.jpeg" width="405"/>
 
 <img src="Images/odrive_0.jpeg" width="300"/>
+> &nbsp; &nbsp; &nbsp; 
 <img src="Images/odrive_1.jpeg" width="300"/>
+> &nbsp; &nbsp; &nbsp; 
 <img src="Images/odrive_2.jpeg" width="300"/>
 
 <img src="Images/full.jpeg" width="900"/>
