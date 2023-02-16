@@ -34,7 +34,7 @@ Please bring all items I have shipped to you to the robotics lab in Upson. You w
 
 ### Deliverables for this lab are:
 0. a video showing that you can control the hoverboard through python
-1. three sketches of potential robots you can build with this platform. Be more realistic and think of these sketches as potential candidates for your final project. (Look around, what can you automate?)
+1. three sketches of potential robots you can build with this platform. Be more realistic and think of these sketches as potential candidates for your final project. (Look around, what objects can you make mobile?)
 
 
 ### The Report
@@ -100,14 +100,14 @@ Reboot the RPi (unplug the power cable and replug it in). Your device should now
 > <img src="Images/wheel_solder1.jpeg" width="300"/>
 
 
-### For every one
+### For everyone
 1. Take a hex key, and remove one of the wheels from your hoverboard. Clamp it down on the desk. The wheel should be **free** to spin, but the axle must be firmly clamped to the desk.
 
 
 > <img src="Images/disassemble_0.jpeg" width="300"/>
 > <img src="Images/disassemble_1.jpeg" width="405"/>
  
-2. Pick up your ODrive from the lab cart. Take a XT60 power cable (pay attention to the shape), insert it to ODrive and tighten it with a flathead screw driver. Be careful with the polarity, **red wire connects to positive, black wire connects to negative.**
+2. Pick up your ODrive from the lab cart. Take a XT60 power cable (pay attention to the shape), insert it to ODrive and tighten it with a [flathead](https://www.merriam-webster.com/dictionary/flathead%20screwdriver#:~:text=noun,its%20top%20compare%20phillips%20screwdriver) screw driver. Be careful with the polarity, **red wire connects to positive, black wire connects to negative.**
 
 
 > <img src="Images/odrive_0.jpeg" width="300"/>
@@ -282,7 +282,7 @@ odrv0.axis1.requested_state = AXIS_STATE_IDLE
 
 
 ### Part D. Sketch Again
-Now, you are aware of the dimension of the motors and the hoverboard base. Create 3 sketches of potential robots your team want to build.
+Now that you are aware of the dimensions of the motors and the hoverboard base, create 3 sketches of potential robot forms your team wants to build.
 Look around and see what you can automate. Keep the following points in mind.
 - Feel free to use the original metal plate as a supporting structure, but you can attach the wheels to pretty much anything you want.
 - As we discussed in class, be mindful of the placement of the wheels. Don't make a robot fall on people.
