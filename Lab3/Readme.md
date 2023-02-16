@@ -288,6 +288,8 @@ Look around and see what you can automate. Keep the following points in mind.
 - As we discussed in class, be mindful of the placement of the wheels. Don't make a robot fall on people.
 - Your robot will interact with people eventually.
 
+Check Canvas discussion channel "Final Project Ideas" for ideas. We posted some of our proposals.
+
 
 ### Again, deliverables for this lab are:
 0. a video showing that you can control the hoverboard through python (functional checkoff. This is just to make sure you have a working set of hardware.)
