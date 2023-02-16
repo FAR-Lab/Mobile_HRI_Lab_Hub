@@ -82,17 +82,17 @@ Reboot the RPi (unplug the power cable and replug it in). Your device should now
 
 4. Connect the ODrive with your RPi with the micro-USB cable provided in the ODrive box, and then plug the JST connector from your wheels to the filtering PCB. Now, you can also plug in the power.
 
-<img src="Images/disassemble_0.jpeg" width="300"/>
+> <img src="Images/disassemble_0.jpeg" width="300"/>
 > &nbsp; &nbsp; &nbsp; 
-<img src="Images/disassemble_1.jpeg" width="405"/>
+> <img src="Images/disassemble_1.jpeg" width="405"/>
 
-<img src="Images/odrive_0.jpeg" width="300"/>
+> <img src="Images/odrive_0.jpeg" width="300"/>
 > &nbsp; &nbsp; &nbsp; 
-<img src="Images/odrive_1.jpeg" width="300"/>
+> <img src="Images/odrive_1.jpeg" width="300"/>
 > &nbsp; &nbsp; &nbsp; 
-<img src="Images/odrive_2.jpeg" width="300"/>
+> <img src="Images/odrive_2.jpeg" width="300"/>
 
-<img src="Images/full.jpeg" width="900"/>
+> <img src="Images/full.jpeg" width="900"/>
 
 ## Part C. Software setup
 Now, let's get your motors running. Be prepared, you will run into many problems during this process for sure. Let the TAs know when you run into a problem that cannot be resolved by repreated attemps or unplugging/replugging. 
@@ -183,7 +183,7 @@ Remember that you have two wheels?
 
 Repeat the procedure for the other wheel. As before, clamp the wheel firmly on the desk. This time, plug your filtering PCB to axis 1, and hook up your wheels accordingly.
 
-<img src="Images/other_wheel.jpeg" width="300"/>
+<img src="Images/other_wheel.jpeg" width="900"/>
 
 Repeat the calibration process above, note that you should change all occurance of `axis0` to `axis1`! 
 
