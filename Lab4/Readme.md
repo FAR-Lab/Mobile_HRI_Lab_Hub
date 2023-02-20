@@ -54,6 +54,24 @@ sudo apt install libcamera-dev
 > <img src="Images/terminal.jpg" width="300">
 
 ## Part C. People Detection
+First, let's test if your camera is working properly. 
+```bash
+# In a terminal in VNC Viewer
+cd
+curl -LJO https://raw.githubusercontent.com/FAR-Lab/Mobile_HRI_Lab_Hub/main/Lab4/test_camera.py
+python3 test_camera.py
+```
+
+This exercise is based on this [tutorial](https://thedatafrog.com/en/articles/human-detection-video/#:~:text=People%20detection,work%20well%20in%20other%20cases.) online. Your CPU will get toasty, so put on a **heat sink**. 
+
+```
+# In a terminal in VNC Viewer
+curl -LJO https://raw.githubusercontent.com/FAR-Lab/Mobile_HRI_Lab_Hub/main/Lab4/people_detection.py
+python3 people_detection.py
+```
+
+Optional: Another example you can try is from [PyTorch](https://pytorch.org/tutorials/intermediate/realtime_rpi.html) (installed already on your system). You will need to write a few lines of code to load the labels yourself. 
+
 
 
 \*\***Document everything here. (Particularly, we would like to see the storyboard and video, although photos of the prototype are also great.)**\*\*
