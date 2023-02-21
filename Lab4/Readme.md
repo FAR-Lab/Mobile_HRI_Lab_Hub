@@ -16,7 +16,7 @@ Continue Lab 3 from last week. This week's material can be done rather quickly.
 
 0. A screenshot of the working VNC viewer with a working image view.
 
-1. Answers to [reflection questions] (#part-d-reflection)
+1. Answers to the reflection questions in part D. 
 
 ### The Report 
 This README.md page in your own repository should be edited to include the work you have done (the deliverables mentioned above). Following the format below, you can delete everything but the headers and the sections between the **stars**. Write the answers to the questions under the starred sentences. Include any material that explains what you did in this lab hub folder, and link it in your README.md for the lab.
@@ -91,4 +91,5 @@ Labs are due on Tuesdays before class. Make sure this page is linked to on your 
 
 0. A screenshot of the working VNC viewer with a working image view.
 
-1. Answers to the bolded questions.
+1. Answers to the reflection questions in part D. 
+
