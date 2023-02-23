@@ -11,7 +11,7 @@ Build off of Lab 3 from last week. This week's material can be done rather quick
 2. Pi Camera
 
 ### Before you come to the lab on Thursday, please do the following:
-1. Install vnc viewer from [here](https://www.realvnc.com/en/connect/download/viewer/) if you haven't. 
+1. Install VNC viewer from [here](https://www.realvnc.com/en/connect/download/viewer/) if you haven't. 
 
 ### Deliverables for this lab are: 
 
