@@ -1,7 +1,7 @@
 # Make the robot see
 **List the names and NetID for your partners here.**
 
-Continue Lab 3 from last week. This week's material can be done rather quickly.
+Build off of Lab 3 from last week. This week's material can be done rather quickly.
 
 
 ## Prep
