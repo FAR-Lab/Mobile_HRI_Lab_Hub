@@ -23,10 +23,10 @@ Note: Future labs will still focus on hoverboards, and all the sensors are only 
 1. Don't make something too crazy. You cannot make an Optimus Prime with provided equipment. Instead, think about what kind of interactions you are interested in and design from there.
 
 2. Here is a list of sensors we have for you. Feel free to discover new sensors as long as you can make them work.
-    - [Pi Camera] (https://www.raspberrypi.com/products/camera-module-v2/)
-    - [ReSpeaker] (https://wiki.seeedstudio.com/ReSpeaker_Mic_Array_v2.0/)
-    - [MPU6050 IMU] (https://invensense.tdk.com/wp-content/uploads/2015/02/MPU-6000-Datasheet1.pdf)
-    - [YD LiDAR (2D)] (https://www.amazon.com/YDLIDAR-X4-Degree-Communication-Interface/dp/B07DBYHJVQ/ref=asc_df_B07DBYHJVQ/?tag=hyprod-20&linkCode=df0&hvadid=241892646230&hvpos=&hvnetw=g&hvrand=14223220310037484520&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9067609&hvtargid=pla-563047874791&psc=1)
+    - [Pi Camera](https://www.raspberrypi.com/products/camera-module-v2/)
+    - [ReSpeaker](https://wiki.seeedstudio.com/ReSpeaker_Mic_Array_v2.0/)
+    - [MPU6050 IMU](https://invensense.tdk.com/wp-content/uploads/2015/02/MPU-6000-Datasheet1.pdf)
+    - [YD LiDAR (2D)](https://www.amazon.com/YDLIDAR-X4-Degree-Communication-Interface/dp/B07DBYHJVQ/ref=asc_df_B07DBYHJVQ/?tag=hyprod-20&linkCode=df0&hvadid=241892646230&hvpos=&hvnetw=g&hvrand=14223220310037484520&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9067609&hvtargid=pla-563047874791&psc=1)
     - Hall sensors are embedded in your hoverboard wheels 
 
 3. Hoverboard is programmed mainly in Python. Clonebot, which features a ESP32 microcontroller, is programmed in C.
@@ -93,6 +93,6 @@ On your raspberry pi, create a new file named `ros2_unicast.xml`, then copy the 
 ```
 Change the `ROBOT_IP` to the computer IP that you plan to do heavy computation.
 
-Host your own router
+- Host your own router
 
 In general, routers enable multicast by default. However, if you have multiple robots running at the same time, it can be difficult to figure out ownership of topics and messages. If you use your own router and host more than one robot, I recommend you to use [ROS DOMAIN ID](https://docs.ros.org/en/foxy/Concepts/About-Domain-ID.html) to seperate out individual communications. 
