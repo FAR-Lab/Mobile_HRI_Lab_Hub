@@ -2,37 +2,44 @@
 **List the names and NetID for your partners here.**
 
 
-Welcome back! Hope you have a relaxing Feburary break. It's never too early to think about your final projects. You will work in teams of 3 to 5 people to automate an object of your choice.
-You can choose either platforms, clonebot or hoverboard, for your final project. Note that future labs will still focus on hoverboards, and all the sensors are only tested to work with Raspberry Pi 4.
+Welcome back! Hope you had a relaxing Feburary break. We missed you. 
+
+It's never too early to think about your final projects. You will work in teams of 3 to 5 people to automate an object of your choice. You can choose either platform for your final project: clonebot or hoverboard. 
+
+Note: Future labs will still focus on hoverboards, and all the sensors are only tested to work with Raspberry Pi 4.
 
 
 ## Prep
 ### For this lab, you will need:
-1. Your laptop
-
+0. Your laptop
 
 ### Deliverables for this lab are:
-1. A proposal for your final project. Maximum 3 pages. Feel free to add pictures and sketches.
+0. A proposal for your final project. Maximum 3 pages. Feel free to add pictures and sketches.
 
 ## Things to consider regarding your proposal
-0. For students enrolled in 5755, you should build a robot that works. For students enrolled in 6755, your robot should also be able to interact with people (either automated or through Wizard of Oz).
+0. For students enrolled in 5755, you should build a robot that works. 
+   For students enrolled in 6755, your robot should also be able to interact with people (either automated or through Wizard of Oz).
 
 1. Don't make something too crazy. You cannot make an Optimus Prime with provided equipment. Instead, think about what kind of interactions you are interested in and design from there.
 
 2. Here is a list of sensors we have for you. Feel free to discover new sensors as long as you can make them work.
-    - Pi Camera
-    - ReSpeaker
-    - MPU6050 IMU
-    - YD LiDAR (2D)
-    - Hall sensors are embedded in your hoverboard wheels
+    - [Pi Camera] https://www.raspberrypi.com/products/camera-module-v2/
+    - [ReSpeaker] https://wiki.seeedstudio.com/ReSpeaker_Mic_Array_v2.0/
+    - [MPU6050 IMU] https://invensense.tdk.com/wp-content/uploads/2015/02/MPU-6000-Datasheet1.pdf
+    - [YD LiDAR (2D)] https://www.amazon.com/YDLIDAR-X4-Degree-Communication-Interface/dp/B07DBYHJVQ/ref=asc_df_B07DBYHJVQ/?tag=hyprod-20&linkCode=df0&hvadid=241892646230&hvpos=&hvnetw=g&hvrand=14223220310037484520&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9067609&hvtargid=pla-563047874791&psc=1
+    - Hall sensors are embedded in your hoverboard wheels 
 
 3. Hoverboard is programmed mainly in Python. Clonebot, which features a ESP32 microcontroller, is programmed in C.
 
-4. If you are modifying an existing object/furniture, consider where/how to attach the wheels, ODrive, and the battery. Remember that you need to charge your battery at some point, so do not seal it inside. Feel free to reuse the metal frame that comes with the hoverboard.
+4. If you are modifying an existing object/furniture, consider where/how to attach the wheels, ODrive, and the battery. 
+
+5. Remember that you need to charge your battery at some point, so do not seal it inside. 
+
+6. Feel free to reuse the metal frame that comes with the hoverboard.
 
 ## Q & A
 
-1. How do I copy/paste to my raspberry pi?
+1. How do I copy/paste code in VNC viewer when using my raspberry pi?
 
 There is no intuitive way to copy/paste in VNC viewer yet. VNC Viewer is just a remote desktop that allows us to visualize graphical applciations. You should avoid programming in VNC as much as possible. Instead, I recommend you to use [VS Code](https://code.visualstudio.com/) on **your own computer** to program your raspberry pi remotely. 
 
