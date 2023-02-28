@@ -46,6 +46,7 @@ Here is a trash barrel robot we built last summer.
 <img src="Images/outside_trashbot.jpg" width="275">
 
 Here is a chairbot.
+
 <img src="Images/chairbot.jpeg" width="275">
 
 
