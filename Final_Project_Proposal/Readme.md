@@ -72,6 +72,8 @@ Once you are in, you can access files on RPi through the file tree on the left. 
 
 Yes, and it is a common practice. In reality, to reduce cost/size of robots, we have a pretty basic computer on the robot (in our case, we have a raspberry pi). The onboard computer should focus on sensor I/O and avoid heavy computation. An external, powerful computer should process the sensor data and send the result back.
 
+<img src="Images/pipeline.jpg" width="1200">
+
 The communication between your onboard computer and the external machine can be handled by ROS easily. In ROS 2, all machines under the same WiFi automatically discover each other through multicast. This means that a topic published from one machine can be subscribed by all machines under the same network. Super convienient! Does this sound like a safety concern? Sure. That's why Cornell doesn't allow it. Read more about it [here](https://it.cornell.edu/wifi/wi-fi-rf-spectrum-use-guidelines-cornell-university).
 
 There are two solutions forward.
