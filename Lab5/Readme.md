@@ -3,8 +3,7 @@
 
 Now, let's controll over robot through some more intuitive ways. 
 
-As you can see, it's pretty easy to control the wheels with python! However, it's not easy for us as humans to command a robot while thinking in terms of individual wheel velocity. If you are a gamer, you might be pretty familiar with controlling avatars with joystick controllers or keyboard keys (WASD). In today's lab, let's map joystick controller commands to wheel velocities in python, and you will never deal with python again. 
-
+As you can see, it's pretty easy to control the wheels with python! However, it's not easy for us as humans to command a robot while thinking in terms of individual wheel velocity. If you are a gamer, you might be pretty familiar with controlling avatars with joystick controllers or keyboard keys (WASD). In today's lab, let's map joystick controller commands to wheel velocities in python.
 
 ## Prep
 
@@ -27,72 +26,33 @@ This README.md page in your own repository should be edited to include the work 
 ## Lab Overview
 For this assignment, you are going to:
 
-A) [Provide feedback to your peers](#part-a-provide-feedback)
+A) [Connect Joystick Controller to RPi](#part-a-connect-joystick-controller-to-RPi)
 
-B) [Site the interaction](#part-b-site-the-interaction)
+B) [Read Messages from Joystick](#part-b-read-messages-from-Joystick)
 
-C) [Costume the robot](#part-c-costume-the-robot)
+C) [Map buttons to control](#part-c-map-buttons-to-control)
 
-D) [Wizard the robot](#part-d-wizard-the-robot) 
-
-E) [Video record the interaction](#part-e-record)
+D) [Try it with your hoverboard!](#part-d-try-it-with-your-hoverboard!) 
 
 Labs are due on Tuesdays before class. Make sure this page is linked to on your main class hub page.
 
-## Part A. Provide Feedback
-You and your teammates will be assigned lab 1 submissions from one other group. Go to their github pages, view their videos, and provide them with reactions, suggestions & feedback: explain to them what you saw happening in their video. Guess the scene and the goals of the character. Ask them about anything that wasn’t clear.
+## Part A. Connect Joystick Controller to RPi
+Our wireless joystick controller connets to RPi through Bluetooth. If you are an old school terminal person, you can register your joystick through command line via `bluetoothctl`([tutorial](https://www.makeuseof.com/manage-bluetooth-linux-with-bluetoothctl/)).
 
-**Summarize feedback your feedback here.**
+It is much easier to pair a bluetooth device in VNC viewer. 
+1. login to VNC viewer.
+2. Setup bluetooth. Open a terminal on your RPi.
+```bash
+sudo apt install bluez bluez-tools 
+sudo apt install blueman
+```
 
-## Part B. Site the interaction
+## Part B. Read Messages from Joystick
 
-Think about where the interaction you are prototyping is going to occur-- on a desk? on a floor? indoors? outdoors?
+## Part C. Map buttons to control
 
-What other people and objects are in that space?
+## Part D. Try it with your hoverboard!
 
-What activities are going on in that space? What activity is the robot going to be involved in?
-
-\*\***Sketch and/or take photos of the site(s) you are considering.**\*\*
-
-\*\***Document the activities being considered.**\*\*
-
-\*\***What issues or opportunties arise from the site and activities?**\*\*
-
-## Part C. Costume the robot
-
-Only now should you start worrying about what the device should look like. Develop one costume so that CloneBot can fit into it's setting.
-
-Think about the setting of the device: is the environment a place where the device could overheat? Is water a danger? 
-
-Pick one of the custumes and make it with paper or cardboard or any other material!
-
-\*\***Include sketches of what your robot might look like here.**\*\*
-
-\*\***Include photos of your custumed robot here.**\*\*
-
-\*\***What concerns or opportunitities are influencing the way you've designed the robot to look?**\*\*
-
-
-## Part D. Wizard the Robot
-Take a little time to set up the wizarding set-up that allows for someone to remotely control the robot while someone interacts with it. Hint: You can use Zoom to record videos, and you can pin someone’s video feed if that is the scene which you want to record. 
-
-\*\***Include your first attempts at recording the set-up video here.**\*\*
-
-Now, hange the goal within the same setting, and update the interaction with the paper prototype. 
-
-\*\***Show the follow-up work here.**\*\*
-
-## Part E. Record
-
-\*\***Take videos of your prototyped interaction.**\*\*
-
-\*\***Please indicate anyone you collaborated with on this Lab.**\*\*
-Be generous in acknowledging their contributions! And also recognizing any other influences (e.g. from YouTube, Github, Twitter) that informed your design. 
-
-
-\*\***Document everything here. (Particularly, we would like to see the storyboard and video, although photos of the prototype are also great.)**\*\*
-
-Labs are due on Tuesdays before class. Make sure this page is linked to on your main class hub page.
 
 ### Again, deliverables for this lab are: 
 
