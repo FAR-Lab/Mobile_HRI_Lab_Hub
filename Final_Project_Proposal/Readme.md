@@ -105,7 +105,7 @@ On your raspberry pi, create a new file named `ros2_unicast.xml`, then copy the 
    </participant>
 </profiles>
 ```
-Change the `ROBOT_IP` to the computer IP that you plan to do heavy computation.
+Change the `ROBOT_IP` to the computer IP that you plan to do heavy computation (must be on the same network).
 
 - Host your own router
 
