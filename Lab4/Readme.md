@@ -65,10 +65,8 @@ curl -LJO https://raw.githubusercontent.com/FAR-Lab/Mobile_HRI_Lab_Hub/main/Lab4
 python3 test_camera.py
 ```
 **Please include a screenshot of the working VNC viewer with a working image view.**
-​
-![IMG_4621](https://user-images.githubusercontent.com/62056130/221423059-d83dd7e0-76cd-4369-9e4f-7760b4c7c919.jpg)
-​
-​![IMG_4621](https://user-images.githubusercontent.com/112022260/221882166-c22e3f53-04e9-4471-a541-29c093d113ac.jpg)
+
+![IMG_4621](https://user-images.githubusercontent.com/112022260/221882411-b3c506f1-0aa3-437f-957a-3d6a552c385d.jpg)
 
 This exercise is based on this [The Data Frog Tutorial](https://thedatafrog.com/en/articles/human-detection-video/#:~:text=People%20detection,work%20well%20in%20other%20cases.) online. Your CPU will get toasty, so put on a **heat sink**. 
 ​
