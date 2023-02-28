@@ -8,13 +8,13 @@ It's never too early to think about your final projects. You will work in teams 
 
 Note: Future labs will still focus on hoverboards, and all the sensors are only tested to work with Raspberry Pi 4.
 
+## Deliverables for this lab are:
+0. A proposal for your final project. 
 
-## Prep
-### For this lab, you will need:
-0. Your laptop
-
-### Deliverables for this lab are:
-0. A proposal for your final project. Maximum 3 pages. Feel free to add pictures and sketches.
+### Requirements
+- Length: 3 pages max. Feel free to include pictures and sketches, but keep it within the 3-page limit.
+- The proposal should describe only **one** robot, which your team will build for the rest of the semester.
+- Be creative!
 
 ## Things to consider regarding your proposal
 0. For students enrolled in 5755, you should build a robot that works. 
@@ -35,7 +35,19 @@ Note: Future labs will still focus on hoverboards, and all the sensors are only 
 
 5. Remember that you need to charge your battery at some point, so do not seal it inside. 
 
-6. Feel free to reuse the metal frame that comes with the hoverboard.
+6. Feel free to reuse the metal frame that comes with the hoverboard, but we also bought plywood for you to laser cut and customize.
+
+7. The TAs posted some potential candidates that need some wheels [here](https://canvas.cornell.edu/courses/51500/discussion_topics/554794). If your team wants to modify one of our existing candidates, please reply to the picture (one team per furniture).
+
+## Example
+Here is a trash barrel robot we built last summer.
+
+<img src="Images/hoverboard_base.jpeg" width="300">
+<img src="Images/outside_trashbot.jpg" width="275">
+
+Here is a chairbot.
+<img src="Images/chairbot.jpeg" width="275">
+
 
 ## Q & A
 
