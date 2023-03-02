@@ -54,7 +54,7 @@ Here is a chairbot:
 
 1. How do I copy/paste code in VNC viewer when using my raspberry pi?
 
-If you use the on-screen menu paste functions for VNC viewer, you can paste from your local machine to VNC Viewer. That said, you should avoid programming in VNC as much as possible. Instead, we recommend you to use [VS Code](https://code.visualstudio.com/) on **your own computer** to program your Raspberry Pi remotely. 
+If you use the on-screen menu paste functions for VNC viewer, you can paste from your local machine to VNC Viewer. (More instructions [here](https://help.realvnc.com/hc/en-us/articles/360002253738-Copying-and-Pasting-Text#copying-and-pasting-text-to-vnc-server-0-0).) That said, you should avoid programming in VNC as much as possible. Instead, we recommend you to use [VS Code](https://code.visualstudio.com/) on **your own computer** to program your Raspberry Pi remotely. 
 
 To do so, download [VS Code](https://code.visualstudio.com/) and install the `Remote SSH` extension.
 
