@@ -37,7 +37,9 @@ Note: Future labs will still focus on hoverboards, and all the sensors are only 
 
 6. Feel free to reuse the metal frame that comes with the hoverboard; we also bought plywood for you to laser cut and customize.
 
-7. The TAs posted some potential project candidates, platforms that want to be mobile robots, [here](https://canvas.cornell.edu/courses/51500/discussion_topics/554794). If your team wants to modify one of our existing candidates, please reply to the picture (one team per furniture).
+7. It is always good to prototype your design with cardboards first and then move to more rigid material (like plywood). This is also a good practice if you want to laser cut material. Try it with cardboards to test out shape and dimension. We don't have unlimited supply of plywood. 
+
+8. The TAs posted some potential project candidates, platforms that want to be mobile robots, [here](https://canvas.cornell.edu/courses/51500/discussion_topics/554794). If your team wants to modify one of our existing candidates, please reply to the picture (one team per furniture).
 
 ## Example
 Here is a trash barrel robot we built last summer:
