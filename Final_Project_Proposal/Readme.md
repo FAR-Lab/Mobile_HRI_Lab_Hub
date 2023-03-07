@@ -17,10 +17,10 @@ Note: Future labs will still focus on hoverboards, and all the sensors are only 
 - Be creative!
 
 ## Things to consider regarding your proposal
-0. For students enrolled in 5755, you should build a robot that works. 
-   For students enrolled in 6755, your robot should also be able to interact with people (either automated or through Wizard of Oz).
+0. For students enrolled in 5755, you should build a robot that should also be able to interact with people (either automated or through Wizard of Oz) 
+   For students enrolled in 6755, your robot should work well enough to support a research experiment, ideally with human participants or in human environments.
 
-1. Don't make something too crazy. You cannot make an Optimus Prime with provided equipment. Instead, think about what kind of interactions you are interested in and design from there.
+1. Scale the project. You cannot make an Optimus Prime with provided equipment. Think about what is essential for the kind of interactions you are interested in, and design from there. Separate your plans so that the essential-to-have bits are done first, and nice-to-have features are added if the essential parts are complete.
 
 2. Here is a list of sensors we have for you. Feel free to discover new sensors as long as you can make them work.
     - [Pi Camera](https://www.raspberrypi.com/products/camera-module-v2/)
@@ -29,23 +29,25 @@ Note: Future labs will still focus on hoverboards, and all the sensors are only 
     - [YD LiDAR (2D)](https://www.amazon.com/YDLIDAR-X4-Degree-Communication-Interface/dp/B07DBYHJVQ/ref=asc_df_B07DBYHJVQ/?tag=hyprod-20&linkCode=df0&hvadid=241892646230&hvpos=&hvnetw=g&hvrand=14223220310037484520&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9067609&hvtargid=pla-563047874791&psc=1)
     - Hall sensors are embedded in your hoverboard wheels 
 
-3. Hoverboard is programmed mainly in Python. Clonebot, which features a ESP32 microcontroller, is programmed in C.
+3. Hoverboard is programmed mainly in Python. Clonebot, which features a ESP32 microcontroller, is programmed in C. Describe what you expect to use for your software stack.
 
 4. If you are modifying an existing object/furniture, consider where/how to attach the wheels, ODrive, and the battery. 
 
 5. Remember that you need to charge your battery at some point, so do not seal it inside. 
 
-6. Feel free to reuse the metal frame that comes with the hoverboard, but we also bought plywood for you to laser cut and customize.
+6. Feel free to reuse the metal frame that comes with the hoverboard; we also bought plywood for you to laser cut and customize.
 
-7. The TAs posted some potential candidates that need some wheels [here](https://canvas.cornell.edu/courses/51500/discussion_topics/554794). If your team wants to modify one of our existing candidates, please reply to the picture (one team per furniture).
+7. It is always good to prototype your design with cardboards first and then move to more rigid material (like plywood). This is also a good practice if you want to laser cut material. Try it with cardboards to test out shape and dimension. We don't have unlimited supply of plywood. 
+
+8. The TAs posted some potential project candidates, platforms that want to be mobile robots, on this [Miro board](https://miro.com/app/board/uXjVPh1cE7w=/?share_link_id=887226324090). If your team wants to modify one of our existing candidates, please put a sticky note on the picture with your neams (one team per furniture). Feel free to post new ideas and sketches on the Miro board to share with your peers.
 
 ## Example
-Here is a trash barrel robot we built last summer.
+Here is a trash barrel robot we built last summer:
 
 <img src="Images/hoverboard_base.jpeg" width="300">
 <img src="Images/outside_trashbot.jpg" width="275">
 
-Here is a chairbot.
+Here is a chairbot:
 
 <img src="Images/chairbot.jpeg" width="275">
 
@@ -54,7 +56,7 @@ Here is a chairbot.
 
 1. How do I copy/paste code in VNC viewer when using my raspberry pi?
 
-There is no intuitive way to copy/paste in VNC viewer yet. VNC Viewer is just a remote desktop that allows us to visualize graphical applciations. You should avoid programming in VNC as much as possible. Instead, I recommend you to use [VS Code](https://code.visualstudio.com/) on **your own computer** to program your raspberry pi remotely. 
+If you use the on-screen menu paste functions for VNC viewer, you can paste from your local machine to VNC Viewer. (More instructions [here](https://help.realvnc.com/hc/en-us/articles/360002253738-Copying-and-Pasting-Text#copying-and-pasting-text-to-vnc-server-0-0).) That said, you should avoid programming in VNC as much as possible. Instead, we recommend you to use [VS Code](https://code.visualstudio.com/) on **your own computer** to program your Raspberry Pi remotely. 
 
 To do so, download [VS Code](https://code.visualstudio.com/) and install the `Remote SSH` extension.
 
