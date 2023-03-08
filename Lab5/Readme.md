@@ -39,7 +39,7 @@ Labs are due on Tuesdays before class. Make sure this page is linked to on your 
 Our wireless joystick controller connets to RPi through Bluetooth. If you are an old school terminal person, you can register your joystick through command line via `bluetoothctl`([tutorial](https://www.makeuseof.com/manage-bluetooth-linux-with-bluetoothctl/)).
 
 It is much easier to pair a bluetooth device in VNC viewer. 
-1. login to VNC viewer.
+1. Login to VNC viewer.
 2. Setup bluetooth. 
 Open a terminal on your RPi.
 ```bash
@@ -48,7 +48,7 @@ sudo apt install blueman # not the musical group, it is short for bluetooth mana
 ```
 3. Open bluetooth management
 <img src="Images/blueman.jpg" width="600"/>
-4. open your joystick controller and boot it to wireless pairing mode. Instructions are printed on the back of the box.
+4. Open your joystick controller and boot it to wireless pairing mode. Instructions are printed on the back of the box.
 5. While your controller is double flashing, click the search button in the bluetooth manager. You should be able to find your controller.  Right click on the controller and select connect. Once connected, your controller LED should turn blue.
 <img src="Images/blueman_manager.jpg" width="600"/>
 
@@ -114,7 +114,7 @@ Let's see what's actually being published under the topic `/joy`. We will talk a
 ```
 ros2 topic echo /joy
 ```
-A lot of things are printing to the screen! Since the node is continuously publishing the message, I just copied one message below to demonstrate. **Try pressing different buttons and turning different knobs on the controller to see what changes.**
+A lot of things are printing to the screen! Since the node is continuously publishing the message, I just copied one message below to demonstrate. **Try pressing different buttons and turning different knobs on the controller to see what changes. You should see something like: **
 ```
 ---
 header:
@@ -156,7 +156,7 @@ Modern joystick controllers are not just simple input devices. They can also pro
 
 If you are interested in controlling your robot through Wizard-of-Oz, it is worth considering what feedback you want to provide to the wizard. Of course, visual feedback is always important: the wizard needs to see the surrouding of the robot they are controlling. Beyond that, a touch of vibration would make the whole interaction more interesting. For example, you can make the joystick rumble when a person is near the robot.
 
-To make the controller rumble, we will make use of the `/joy/set_feedback` topic. You have seen it ealier when you ran `ros2 topic list`. It is also provided by the `Joy` package.First, let's check out what kind of message this topic is expecting. We can use the command `ros2 topic info [TOPIC_NAME]` to inspect any active topic.
+To make the controller rumble, we will make use of the `/joy/set_feedback` topic. You have seen it ealier when you ran `ros2 topic list`. It is also provided by the `Joy` package. First, let's check out what kind of message this topic is expecting. We can use the command `ros2 topic info [TOPIC_NAME]` to inspect any active topic.
 
 ```bash
 ros2 topic info /joy/set_feedback
@@ -168,7 +168,7 @@ From returned information, we learned that this topic is expecting a sensor mess
 
 So, what's up with the JoyFeedback message? Let's see how it is [defined](http://docs.ros.org/en/api/sensor_msgs/html/msg/JoyFeedback.html).
 
-Just in case you are too lazy to click on the link above, I copied the message definition below. 
+Just in case you don't feel like clicking on the link above, I copied the message definition below. 
 ```bash
 # Declare of the type of feedback
 uint8 TYPE_LED    = 0
@@ -189,7 +189,7 @@ A JoyFeedback message contains three field, type, id, and intensity. The type pa
 
 Now, let's publish some messages to the topic `/joy/set_feedback`. To be honest, I feel lazy now. I don't want to write an entire package, just like what we did in lab0, to publish a simple string. I want a quick and dirty way to debug and prototype. Luckily, ROS comes with plenty of command line tools to make your life easier. 
 
-To publish messages to a topic through command line, use the following syntax
+To publish messages to a topic through command line, use the following syntax:
 ```
 ros2 topic pub [Frequency] [Topic Name] [Message Type] [Content]
 ```
@@ -201,7 +201,7 @@ ros2 topic pub -r 10 /joy/set_feedback sensor_msgs/msg/JoyFeedback "{type: 1, id
 
 Try it! Make your controller rumble!
 
-** **Come up with three ways where the rumble feature can benefit WoZ deployment or other applications.** **
+** **Come up with three ways where the rumble feature can benefit WoZ deployment or other applications. Describe these in your deliverables.** **
 
 ## Part D. Map buttons to control
 I have written some code that subscribe to the `/joy` topic and publish a [twist](http://docs.ros.org/en/lunar/api/geometry_msgs/html/msg/Twist.html) message accordingly. A twist message consists of two vectors, one represents linear velocity and one represents angular velocity.
@@ -221,15 +221,15 @@ git clone https://github.com/FAR-Lab/mobilehri2023.git
 ## Part E. Try it with your hoverboard!
 Let's do some math! This is probably the only math you will do all semester. In the previous step, we mapped joystick controller commands to a message type called twist (mainly linear velocity and angular velocity). We need another layer of computation to convert twist to commands that ODrive understands (angular velocity for wheels on each axis). Imagine the following simplified diagram. 
 
-<img src="Images/diff_drive.jpg" width="800"/>
-
-When the hoverboard is moving in a straight line (forward/backword), the control is pretty straight forward. When the hoverboard is turning, the hoverboard must rotate about a point, Instantaneous Center of Curvature (ICC), that lies along the common left and right wheel axis (as shown above). (When the robot is moving in a straight line, ICC is infinitely far away.)
-
 In this problem, the following variables are known
 - $v$: robot linear velocity 
 - $w$: robot angular velocity
 - $l$: wheel track distance (distance between the wheels)
 - $r$: wheel radius (not shown in the diagram)
+
+<img src="Images/diff_drive.jpg" width="800"/>
+
+When the hoverboard is moving in a straight line (forward/backword), the control is pretty straight forward. When the hoverboard is turning, the hoverboard must rotate about a point, Instantaneous Center of Curvature (ICC), that lies along the common left and right wheel axis (as shown above). (When the robot is moving in a straight line, Instantaneous Center of Curvature is infinitely distant)
 
 The following variables are unknown (or difficult to track)
 - $R$: radius for $ICC$
