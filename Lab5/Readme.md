@@ -225,14 +225,14 @@ Pay attention to how the values are accessed from joystick controller and map to
 source install/setup.launch
 ros2 launch joy_teleop_keymapping mapping_launch.py
 ```
-What we did here is that we launched two nodes, the `joy` node from the previous section, and a `keymapping` node (that I wrote) to map joystick commands to twist messages (under `/cmd_vel`). We only concern overselves with the x  (forward) axis of linear velocity and z (up) axis of the angular velocity. (Why? Think about all the possible movements of a hoverboard.) 
+What we do here is that we start two nodes, the `joy` node from the previous section, and a `keymapping` node (that I wrote) to map joystick commands to twist messages (under `/cmd_vel`). We only concern overselves with the x  (forward) axis of linear velocity and z (up) axis of the angular velocity. (Why? Think about all the possible movements of a hoverboard.) 
 ```
 # In a new terminal
 ros2 topic echo /cmd_vel
 # play with your joysticks to see what happens.
 ```
 
-> Feel free to customize my code however you want. There are so many buttons and triggers on the controller, be creative!
+> Feel free to customize my code (`~/mobilehri_ws/src/mobilehri2023/joy_teleop_keymapping/joy_teleop_keymapping/keymapping_node.py`) however you want. There are so many buttons and triggers on the controller, be creative!
 
 ## Part E. Try it with your hoverboard!
 Let's do some math! This is probably the only math you will do all semester. In the previous step, we mapped joystick controller commands to a message type called twist (mainly linear velocity and angular velocity). We need another layer of computation to convert twist to commands that ODrive understands (angular velocity for wheels on each axis). Imagine the following simplified diagram. 
