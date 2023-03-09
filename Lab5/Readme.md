@@ -36,7 +36,9 @@ D) [Try it with your hoverboard!](#part-e-try-it-with-your-hoverboard!)
 Labs are due on Tuesdays before class. Make sure this page is linked to on your main class hub page.
 
 ## Part A. Connect Joystick Controller to RPi
-Our wireless joystick controller connets to RPi through Bluetooth. If you are an old school terminal person, you can register your joystick through command line via `bluetoothctl`([tutorial](https://www.makeuseof.com/manage-bluetooth-linux-with-bluetoothctl/)).
+Our wireless joystick controller connects to RPi through Bluetooth. 
+
+If you are an old school terminal person, you can register your joystick through the command line via `bluetoothctl`([tutorial](https://www.makeuseof.com/manage-bluetooth-linux-with-bluetoothctl/)).
 
 It is much easier to pair a bluetooth device in VNC viewer. 
 1. Login to VNC viewer.
@@ -49,11 +51,11 @@ sudo apt install blueman # not the musical group, it is short for bluetooth mana
 3. Open bluetooth management
 <img src="Images/blueman.jpg" width="600"/>
 4. Open your joystick controller and boot it to wireless pairing mode. Instructions are printed on the back of the box.
-5. While your controller is double flashing, click the search button in the bluetooth manager. You should be able to find your controller.  Right click on the controller and select connect. Once connected, your controller LED should turn blue.
+5. While your controller is double-flashing, click the search button in the bluetooth manager. You should be able to find your controller.  Right-click on the controller and select Connect. Once connected, your controller LED should turn blue.
 <img src="Images/blueman_manager.jpg" width="600"/>
 
 ## Part B. Read Messages from Joystick
-Now, you have successfully paired your controller with your RPi. Let's access the values through ROS 2.
+Now, you have successfully paired your controller with your RPi. Let's access the values from the Joystick through ROS 2.
 
 Open a terminal (either in VNC viewer or a local terminal that ssh to your RPi)
 ```bash
@@ -61,7 +63,7 @@ ros2 run joy joy_node
 # You should see somthing like the following:
 # [INFO] [1677696499.194657745] [joy_node]: Opened joystick: Wireless Controller.  deadzone: 0.050000
 ```
-ROS 2 comes with a default package, `joy`, to communicate with joystick controllers. Recall in Lab 0, you wrote your own publisher to publish a string under the topic `hri_topic`. The Joy package read values from your controller and publish your input under a specific topic. `joy_node` is the name of the executable that is actually linked to the underlying python script. They are defined in the `setup.py`. Now, let's find out which topic it is!
+ROS 2 comes with a default package, `joy`, to communicate with joystick controllers. Recall that in Lab 0, you wrote your own publisher to publish a string under the topic `hri_topic`. The Joy package reads values from your controller and publishes your input under a specific topic. `joy_node` is the name of the executable that is actually linked to the underlying python script. They are defined in the `setup.py`. Now, let's find out which topic the joystick sends messages to!
 
 <details closed>
 <summary>More on `joy_node`</summary>
@@ -96,10 +98,10 @@ setup(
     },
 )
 ```
-In the `entry_point` section, we defined two entry points `talker` and `listener` to the main functions we wrote in python files. We are basically creating a shortcut for ROS 2 to find our code easily. Of course, we can also execute those functions directly through the command `python3` instead of `ros2`. This is just a good practice to keep your code clean.
+In the `entry_point` section, we defined two entry points, `talker` and `listener` to the main functions we wrote in Python files. We are basically creating a shortcut for ROS 2 to find our code easily. Of course, we can also execute those functions directly through the command `python3` instead of `ros2`. This is just a good practice, to keep your code clean.
 </details>
 
-Leave the previous terminal running, and open a new terminal terminal
+Leave the previous terminal running, and open a new terminal window:
 ```python
 ros2 topic list
 # You should see the following
@@ -110,7 +112,7 @@ ros2 topic list
 /rosout
 '''
 ```
-Let's see what's actually being published under the topic `/joy`. We will talk about `/joy/set_feedback` later. In the same terminal,
+Let's see what's actually being published under the topic `/joy`. We will talk about `/joy/set_feedback` later. In the same terminal, enter
 ```
 ros2 topic echo /joy
 ```
