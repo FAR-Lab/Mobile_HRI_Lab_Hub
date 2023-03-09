@@ -287,6 +287,8 @@ As your system scales up, you will run many nodes and define many parameters.
 ROS 2 launch files are designed to help you organize your program execution and make start up process efficient.
 
 If you take a look at `mobile_robot_launch.py` in `mobile_robot_control/launch/`, you will notice that we started three nodes in this file. If we do not have this launch file, we need to open three terminals and run `ros2 run` on each node.
+    
+The `joy_node` reads in controller commands, the `joy_teleop_keymapping_node` map controller commands to twist message (under topic `cmd_vel`), and the `mobile_robot_control_node` convert twist messages to individual wheel velocity through the math derivation above.
 
 </details>
 
