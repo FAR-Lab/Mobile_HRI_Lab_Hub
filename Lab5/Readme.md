@@ -213,8 +213,24 @@ cd ~
 mkdir -p ~/mobilehri_ws/src
 cd ~/mobilehri_ws/src
 git clone https://github.com/FAR-Lab/mobilehri2023.git 
+cd ~/mobilehri_ws
+colcon build
+# Ignore the warnings. You should see the following.
+# Summary: 3 packages finished [16.5s]
+# 3 packages had stderr output: joy_teleop_keymapping mobile_robot_control picamera
 ```
-
+Take a look at `~/mobilehri_ws/src/mobilehri2023/joy_teleop_keymapping/joy_teleop_keymapping/keymapping_node.py`.
+Pay attention to how the values are accessed from joystick controller and map to a twist message. 
+```
+source install/setup.launch
+ros2 launch joy_teleop_keymapping mapping_launch.py
+```
+What we did here is that we launched two nodes, the `joy` node from the previous section, and a `keymapping` node (that I wrote) to map joystick commands to twist messages (under `/cmd_vel`). We only concern overselves with the x  (forward) axis of linear velocity and z (up) axis of the angular velocity. (Why? Think about all the possible movements of a hoverboard.) 
+```
+# In a new terminal
+ros2 topic echo /cmd_vel
+# play with your joysticks to see what happens.
+```
 
 > Feel free to customize my code however you want. There are so many buttons and triggers on the controller, be creative!
 
