@@ -228,7 +228,7 @@ colcon build
 Take a look at `~/mobilehri_ws/src/mobilehri2023/joy_teleop_keymapping/joy_teleop_keymapping/keymapping_node.py`.
 Pay attention to how the values are accessed from joystick controller and map to a twist message. 
 ```
-source install/setup.batch
+source install/setup.bash
 ros2 launch joy_teleop_keymapping mapping_launch.py
 ```
 We start two nodes, the `joy` node from the previous section, and a `keymapping` node (that I wrote) to map joystick commands to twist messages (under `/cmd_vel`). We only concern overselves with the forward x-axis of linear velocity and upward z-axis of the angular velocity. (Why? Think about all the possible movements of a hoverboard.) 
