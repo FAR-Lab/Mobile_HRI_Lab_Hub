@@ -229,8 +229,9 @@ What we do here is that we start two nodes, the `joy` node from the previous sec
 ```
 # In a new terminal
 ros2 topic echo /cmd_vel
-# play with your joysticks to see what happens.
+# Hold down L1 button, then play with your joysticks to see what happens.
 ```
+We defined the L1 button to be the safety button to avoid unintentional control, this is a simple `if` statement in the code.
 
 > Feel free to customize my code (`~/mobilehri_ws/src/mobilehri2023/joy_teleop_keymapping/joy_teleop_keymapping/keymapping_node.py`) however you want. There are so many buttons and triggers on the controller, be creative!
 
