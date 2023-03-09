@@ -35,7 +35,7 @@ D) [Map buttons to control](#part-d-map-buttons-to-control)
 
 E) [Try it with your hoverboard!](#part-e-try-it-with-your-hoverboard!) 
 
-F) (optional) [Mount your wheels to a prototype chassis] (#part-f-mount-your-wheels-to-chassis)
+F) (optional) [Mount your wheels to a prototype chassis](#part-f-mount-your-wheels-to-chassis)
 
 Labs are due on Tuesdays before class. Make sure this page is linked to on your main class hub page.
 
