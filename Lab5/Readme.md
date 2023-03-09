@@ -154,11 +154,11 @@ As you can see, all axes values are **continuous floats**, and all button values
 
 
 ## Part C. Make it rumble!
-Modern joystick controllers are not just simple input devices. They can also provide feedback to users through vibration (pretty common in shooting or racing games). In fact, tactile feedback can also carry rich information and is already ubiquitous (e.g. your phone provides plenty of tactile feedback to you).
+Modern joystick controllers are not just simple input devices. They can also provide feedback to users through haptic vibration (pretty common in shooting or racing games). In fact, tactile feedback can also carry rich information and is already ubiquitous (e.g. your phone provides plenty of tactile feedback to you).
 
-If you are interested in controlling your robot through Wizard-of-Oz, it is worth considering what feedback you want to provide to the wizard. Of course, visual feedback is always important: the wizard needs to see the surrouding of the robot they are controlling. Beyond that, a touch of vibration would make the whole interaction more interesting. For example, you can make the joystick rumble when a person is near the robot.
+If you are interested in controlling your robot through Wizard-of-Oz, it is worth considering what feedback you want to provide to the wizard. Of course, visual feedback is always important: the wizard needs to see the surroundings of the robot they are controlling. Beyond that, a touch of vibration would make the whole interaction more interesting. For example, you can make the joystick rumble when a person is near the robot.
 
-To make the controller rumble, we will make use of the `/joy/set_feedback` topic. You have seen it ealier when you ran `ros2 topic list`. It is also provided by the `Joy` package. First, let's check out what kind of message this topic is expecting. We can use the command `ros2 topic info [TOPIC_NAME]` to inspect any active topic.
+To make the controller rumble, we will make use of the `/joy/set_feedback` topic. You have seen it earlier when you ran `ros2 topic list`. It is also provided by the `Joy` package. First, let's check out what kind of message this topic is expecting. We can use the command `ros2 topic info [TOPIC_NAME]` to inspect any active topic.
 
 ```bash
 ros2 topic info /joy/set_feedback
@@ -187,9 +187,9 @@ uint8 id
 # actually binary, driver should treat 0<=x<0.5 as off, 0.5<=x<=1 as on.
 float32 intensity
 ```
-A JoyFeedback message contains three field, type, id, and intensity. The type parameter specifies what kind of feedback we are dealing with. In our case, we want `TYPE_RUMBLE`. We we have multiple feedback devices, you want to specify which device you are talking about through `id`. We can go with default 0 for now. For intensity, note that it is a number between 0 and 1. 
+A JoyFeedback message contains three field, type, id, and intensity. The type parameter specifies what kind of feedback we are dealing with. In our case, we want `TYPE_RUMBLE`. When we have multiple feedback devices, we want to specify which device we are talking about through `id`. We can go with default 0 for now. Note that intensity is defined as a number between 0 and 1. 
 
-Now, let's publish some messages to the topic `/joy/set_feedback`. To be honest, I feel lazy now. I don't want to write an entire package, just like what we did in lab0, to publish a simple string. I want a quick and dirty way to debug and prototype. Luckily, ROS comes with plenty of command line tools to make your life easier. 
+Now, let's publish some messages to the topic `/joy/set_feedback`. To be honest, I feel lazy now. I don't want to write an entire package, like what we did in Lab0, to publish a simple string. I want a quick-and-dirty way to debug and prototype. Luckily, ROS comes with plenty of command-line tools to make our lives easier. 
 
 To publish messages to a topic through command line, use the following syntax:
 ```
@@ -227,7 +227,7 @@ Pay attention to how the values are accessed from joystick controller and map to
 source install/setup.launch
 ros2 launch joy_teleop_keymapping mapping_launch.py
 ```
-What we do here is that we start two nodes, the `joy` node from the previous section, and a `keymapping` node (that I wrote) to map joystick commands to twist messages (under `/cmd_vel`). We only concern overselves with the x  (forward) axis of linear velocity and z (up) axis of the angular velocity. (Why? Think about all the possible movements of a hoverboard.) 
+We start two nodes, the `joy` node from the previous section, and a `keymapping` node (that I wrote) to map joystick commands to twist messages (under `/cmd_vel`). We only concern overselves with the forward x-axis of linear velocity and upward z-axis of the angular velocity. (Why? Think about all the possible movements of a hoverboard.) 
 ```
 # In a new terminal
 ros2 topic echo /cmd_vel
@@ -238,7 +238,7 @@ We defined the L1 button to be the safety button to avoid unintentional control,
 > Feel free to customize my code (`~/mobilehri_ws/src/mobilehri2023/joy_teleop_keymapping/joy_teleop_keymapping/keymapping_node.py`) however you want. There are so many buttons and triggers on the controller, be creative!
 
 ## Part E. Try it with your hoverboard!
-Let's do some math! This is probably the only math you will do all semester. In the previous step, we mapped joystick controller commands to a message type called twist (mainly linear velocity and angular velocity). We need another layer of computation to convert twist to commands that ODrive understands (angular velocity for wheels on each axis). Imagine the following simplified diagram. 
+Let's do some math! (This is probably the only math you will do all semester, so a highlight of the course.) In the previous step, we mapped joystick controller commands to a message type called twist (mainly linear velocity and angular velocity). We need another layer of computation to convert twist to commands that ODrive understands (angular velocity for wheels on each axis). Imagine the following simplified diagram. 
 
 In this problem, the following variables are known
 - $v$: robot linear velocity 
