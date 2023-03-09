@@ -11,11 +11,13 @@ As you have seen, it's pretty easy to control the wheels with Python! However, i
 1. Your Computer
 2. Joystick Controller
 3. Your set of hoverboard + ODrive
+4. (optional) Cardboard to make the proto-chassis for your robot
 
 ### Deliverables for this lab are: 
 
-0. Videos of you controlling the wheels with your joystick controller properly.
-1. Three ideas on how to use controllers' rumble feature for Wizard of Oz control.
+1. Videos of you controlling the wheels with your joystick controller properly.
+2. Three ideas on how to use controllers' rumble feature for Wizard of Oz control.
+3. (optional) Documentation of the robot proto-chassis
 
 ### The Report 
 This README.md page in your own repository should be edited to include both the work you have done, and your thinking behind the work(the deliverables mentioned above). Following the format below, you can delete everything but the headers and the sections between the **stars**. Write the answers to the questions under the starred sentences. Include any material that explains what you did in this lab hub folder, and link it in your README.md for the lab.
@@ -29,9 +31,11 @@ B) [Read Messages from Joystick](#part-b-read-messages-from-Joystick)
 
 C) [Make it rumble](#part-c-make-it-rumble)
 
-C) [Map buttons to control](#part-d-map-buttons-to-control)
+D) [Map buttons to control](#part-d-map-buttons-to-control)
 
-D) [Try it with your hoverboard!](#part-e-try-it-with-your-hoverboard!) 
+E) [Try it with your hoverboard!](#part-e-try-it-with-your-hoverboard!) 
+
+F) (optional) [Mount your wheels to a prototype chassis] (#part-f-mount-your-wheels-to-chassis)
 
 Labs are due on Tuesdays before class. Make sure this page is linked to on your main class hub page.
 
@@ -154,7 +158,7 @@ As you can see, all axes values are **continuous floats**, and all button values
 
 
 ## Part C. Make it rumble!
-Modern joystick controllers are not just simple input devices. They can also provide feedback to users through haptic vibration (pretty common in shooting or racing games). In fact, tactile feedback can also carry rich information and is already ubiquitous (e.g. your phone provides plenty of tactile feedback to you).
+Modern joystick controllers are not just simple input devices. They can also provide feedback to Wizard-users through haptic vibration (pretty common in shooting or racing games). In fact, tactile feedback can also carry rich information and is already ubiquitous (e.g. your phone provides plenty of tactile feedback to you).
 
 If you are interested in controlling your robot through Wizard-of-Oz, it is worth considering what feedback you want to provide to the wizard. Of course, visual feedback is always important: the wizard needs to see the surroundings of the robot they are controlling. Beyond that, a touch of vibration would make the whole interaction more interesting. For example, you can make the joystick rumble when a person is near the robot.
 
@@ -312,8 +316,15 @@ The `joy_node` reads in controller commands, the `joy_teleop_keymapping_node` ma
 </details>
 
 Now, press and hold `L1` on your controller and play with the two joysticks. Hopefully your wheels will start spinning now!
+## Part F. Mount Your Wheels To Chassis
+(Optional, but will be required by next week if you don't get to it)
+
+Using the honeycomb cardboard, hot-glue and zip ties, mount the hub motor wheels to a robot chassis so that you can control the robot while it rolls around on the ground. 
+
+Include pictures/videos of your moving robot chassis.
 
 ### Again, deliverables for this lab are: 
 
-0. Videos of you controlling the wheels with your joystick controller properly.
-1. Three ideas on how to use controllers' rumble feature for Wizard of Oz.
+1. Videos of you controlling the wheels with your joystick controller properly.
+2. Three ideas on how to use controllers' rumble feature for Wizard of Oz.
+3. (optional) Documentation of the robot proto-chassis
