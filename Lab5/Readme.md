@@ -1,9 +1,9 @@
 # Give the robot moves
 **List the names and NetID for your partners here.**
 
-Now, let's controll over robot through some more intuitive ways. 
+Now, let's control our robots to make them move intuitively. 
 
-As you can see, it's pretty easy to control the wheels with python! However, it's not easy for us as humans to command a robot while thinking in terms of individual wheel velocity. If you are a gamer, you might be pretty familiar with controlling avatars with joystick controllers or keyboard keys (WASD). In today's lab, let's map joystick controller commands to wheel velocities in python.
+As you can see, it's pretty easy to control the wheels with Python! However, it's not easy for us as humans to move the robot in ways that feel right while thinking in terms of individual wheel velocity. If you are a gamer, you might be pretty familiar with controlling avatars with joystick controllers or keyboard keys (WASD). In today's lab, let's map joystick controller commands to wheel velocities in Python.
 
 ## Prep
 
@@ -15,10 +15,10 @@ As you can see, it's pretty easy to control the wheels with python! However, it'
 ### Deliverables for this lab are: 
 
 0. Videos of you controlling the wheels with your joystick controller properly.
-1. Three ideas on how to use controllers' rumble feature for Wizard of Oz.
+1. Three ideas on how to use controllers' rumble feature for Wizard of Oz control.
 
 ### The Report 
-This README.md page in your own repository should be edited to include the work you have done (the deliverables mentioned above). Following the format below, you can delete everything but the headers and the sections between the **stars**. Write the answers to the questions under the starred sentences. Include any material that explains what you did in this lab hub folder, and link it in your README.md for the lab.
+This README.md page in your own repository should be edited to include both the work you have done, and your thinking behind the work(the deliverables mentioned above). Following the format below, you can delete everything but the headers and the sections between the **stars**. Write the answers to the questions under the starred sentences. Include any material that explains what you did in this lab hub folder, and link it in your README.md for the lab.
 
 ## Lab Overview
 For this assignment, you are going to:
@@ -53,7 +53,7 @@ sudo apt install blueman # not the musical group, it is short for bluetooth mana
 <img src="Images/blueman_manager.jpg" width="600"/>
 
 ## Part B. Read Messages from Joystick
-Now, you successfully paired your controller with your RPi. Let's access the values through ROS 2.
+Now, you have successfully paired your controller with your RPi. Let's access the values through ROS 2.
 
 Open a terminal (either in VNC viewer or a local terminal that ssh to your RPi)
 ```bash
