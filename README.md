@@ -17,7 +17,7 @@ Please place links here to the README.md's for each of your labs here:
 
 [Lab 5. Give the Robot Moves](Lab5/Readme.md)
 
-Lab 6. Choreographing Movement
+[Lab 6. Choreographing Movement](Lab5/Readme.md)
 
 Lab 7. Finding People to Interact with
 
