@@ -42,7 +42,9 @@ Labs are due on Tuesdays after Spring break. Make sure this page is linked to yo
 
 
 ## Part A. Interact with People
-Based on your final project proposal, sketch out one possible interaction scenario with your robot. Then, act it out with your robot. (Remember to take a video.)
+Based on your final project proposal, sketch out one possible interaction scenario with your robot. The robot must interact with at least one person. Then, act it out with your robot through WoZ. (Remember to take a video.)
+
+Be mindful of the others around you. Be safe.
 
 
 ## Part B. Let's Chat
