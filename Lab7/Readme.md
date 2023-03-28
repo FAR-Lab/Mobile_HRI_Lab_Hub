@@ -60,8 +60,48 @@ You can also change the speed and pitch of the voice. Check out the instructions
 
 ## Part B. Prototype Interaction Routines
 
-(Frank add some stuff for people who haven't scripted motion routines yet)
+So far, we only used two joysticks on the controller to give robots moves. We should utilize the other buttons to trigger some pre-defined routines.
+I suggest that you modify the script in the [joy_teleop_keymapping package](https://github.com/FAR-Lab/mobilehri2023/blob/main/joy_teleop_keymapping/joy_teleop_keymapping/keymapping_node.py).
 
+Specifically, in the `sendCommand()` function
+``` python
+def sendCommand(self, msg):
+        t = Twist()
+        # safety lock, press top left button
+        if msg.buttons[4] == 1.0:
+            t.linear.x = msg.axes[1]
+            # use to represent angular velocity
+            t.angular.z = msg.axes[3]
+            self.twist_pub.publish(t)
+        else:
+            t.linear.x = 0.0
+            t.angular.z = 0.0
+            self.twist_pub.publish(t)
+```
+Here, we programmed the following logic, 
+- if the 4th button is pressed (our safety button), we publish twist commands with input form the first and third axis (the two joysticks).
+
+Feel free to add additional conditions to trigger different motion routines! Here is an example of a wiggle behavior (pseudo code).
+``` python
+import time
+
+...
+
+if wiggle_button:
+      start = time.time() # get current time
+      while time.time() <= start + 1: # do the following command for 1 second
+          t.linear.x = 0.0
+          t.angular.z = variable_depending_on_time
+          self.twist_pub.publish(t)
+          time.sleep(0.2) # good to pause a little bit in practice
+      self.twist_pub.publish(t)
+      start = time.time()
+      while time.time() <= start + 1: # do the following command for 1 second
+          t.linear.x = 0.0
+          t.angular.z = variable_depending_on_time
+          self.twist_pub.publish(t)
+          time.sleep(0.2) # good to pause a little bit in practice
+```
 ## Part C. Test out some interaction!
 
 Based on your final project proposal, sketch out a simple interaction scenario where your robot is interacting (verbally and/or physically) with at least one person. The robot must interact with at least one person. 
