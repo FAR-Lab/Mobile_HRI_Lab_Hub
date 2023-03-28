@@ -69,7 +69,7 @@ def sendCommand(self, msg):
         t = Twist()
         # safety lock, press top left button
         if msg.buttons[4] == 1.0:
-            t.linear.x = msg.axes[1]
+            t.linear.x = msg.axes[1] # for some of you, the wheel is spinning too fast, this is also a good place to slow them down.
             # use to represent angular velocity
             t.angular.z = msg.axes[3]
             self.twist_pub.publish(t)
@@ -79,15 +79,15 @@ def sendCommand(self, msg):
             self.twist_pub.publish(t)
 ```
 Here, we programmed the following logic, 
-- if the 4th button is pressed (our safety button), we publish twist commands with input form the first and third axis (the two joysticks).
+- if the 4th button is pressed (our safety button), we publish twist commands based on inputs form the first and third axes (the two joysticks).
 
-Feel free to add additional conditions to trigger different motion routines! Here is an example of a wiggle behavior (pseudo code).
+Feel free to add additional `if-else` conditions to trigger different motion routines! Here is an example of a wiggle behavior (pseudo code).
 ``` python
 import time
 
 ...
 
-if wiggle_button:
+if wiggle_button_pressed:
       start = time.time() # get current time
       while time.time() <= start + 1: # do the following command for 1 second
           t.linear.x = 0.0
