@@ -21,5 +21,8 @@ Please place links here to the README.md's for each of your labs here:
 
 [Lab 7 + 8. Finding People to Interact with + Chatty Robot](Lab7/Readme.md)
 
+[Optional Material.](Optional_Material/Readme.md)
+
+
 Final Project
 
