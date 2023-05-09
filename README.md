@@ -13,13 +13,16 @@ Please place links here to the README.md's for each of your labs here:
 
 [Lab 4. Make the Robot See](Lab4/Readme.md)
 
-Lab 5. Give the Robot Moves
+[Final Project Proposal](Final_Project_Proposal/Readme.md)
 
-Lab 6. Choreographing Movement
+[Lab 5. Give the Robot Moves](Lab5/Readme.md)
 
-Lab 7. Finding People to Interact with
+[Lab 6. Choreographing Movement](Lab6/Readme.md)
 
-Lab 8. Chatty Robots
+[Lab 7 + 8. Finding People to Interact with + Chatty Robot](Lab7/Readme.md)
+
+[Optional Material.](Optional_Material/Readme.md)
+
 
 Final Project
 
