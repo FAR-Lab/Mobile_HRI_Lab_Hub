@@ -1,4 +1,4 @@
-### Link to completed lab
+# Link to completed lab
 https://github.com/mteresaparreira/Mobile_HRI_Lab_Hub/tree/main/Lab3
 
 
