@@ -1,3 +1,8 @@
+
+
+# Link to submitted lab
+https://github.com/mteresaparreira/Mobile_HRI_Lab_Hub/tree/main/Final_Project_Proposal
+
 # Final Project Planning
 **List the names and NetID for your partners here.**
 
