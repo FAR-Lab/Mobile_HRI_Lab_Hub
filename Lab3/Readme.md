@@ -1,3 +1,7 @@
+# Link to completed lab
+https://github.com/mteresaparreira/Mobile_HRI_Lab_Hub/tree/main/Lab3
+
+
 # Make the Robot Move
 **List the names and NetID for your partners here.**
 

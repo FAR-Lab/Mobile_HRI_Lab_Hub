@@ -1,3 +1,7 @@
+# Link to Lab Submissionn
+
+https://github.com/mteresaparreira/Mobile_HRI_Lab_Hub/tree/main/Lab6
+
 # Choreographing Movement
 **List the names and NetID for your partners here.**
 

@@ -1,4 +1,9 @@
+# Link to submitted lab
+https://github.com/mteresaparreira/Mobile_HRI_Lab_Hub/tree/main/Lab1
+
 # Interaction First
+**Pratul Tandon (pt347), Trevor Morcott (trm75), Maria Teresa Parreira (mb2554)**
+** https://github.com/mteresaparreira/Mobile_HRI_Lab_Hub/tree/main/Lab1 **
 \*\***List the names and NetID for your partners here.**\*\*
 
 In this lab, you will modify a robotic creature (ConeBot) that is originally designed by [Dr. Rei Lee](https://infosci.cornell.edu/~reilee/), a friend of our lab. The [ConeBot](https://infosci.cornell.edu/~reilee/ConeBot/) is a shy robot that hides under a small traffic cone. It is adventuring the world by itself but hopes people don't notice it at all.

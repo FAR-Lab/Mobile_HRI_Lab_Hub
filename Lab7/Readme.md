@@ -1,3 +1,8 @@
+# Link to lab submissionn
+
+https://github.com/mteresaparreira/Mobile_HRI_Lab_Hub/tree/main/Lab7
+
+
 # Interact with with people + chatty robot
 
 
